@@ -9,6 +9,7 @@ export type FeaturedProduct = {
   thumbnail?: string
 }
 
+
 export type ProductPreviewType = {
   id: string
   title: string
