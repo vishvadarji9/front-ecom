@@ -37,6 +37,7 @@ export type InfiniteProductPage = {
   }
 }
 
+
 export type ProductVariantInfo = Pick<ProductVariant, "prices">
 
 export type RegionInfo = Pick<Region, "currency_code" | "tax_code" | "tax_rate">
