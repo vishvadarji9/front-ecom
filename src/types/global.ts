@@ -8,8 +8,6 @@ export type FeaturedProduct = {
   handle: string
   thumbnail?: string
 }
-
-
 export type ProductPreviewType = {
   id: string
   title: string
