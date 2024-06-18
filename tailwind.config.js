@@ -19,7 +19,7 @@ module.exports = {
         display: "display opacity",
         visibility: "visibility",
         padding: "padding-top padding-right padding-bottom padding-left",
-      },
+    },
       colors: {
         grey: {
           0: "#FFFFFF",

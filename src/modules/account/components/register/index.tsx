@@ -18,8 +18,9 @@ const Register = ({ setCurrentView }: Props) => {
 
   return (
     <div className="max-w-sm flex flex-col items-center" data-testid="register-page">
+      <div className="main bg-cyan-200 rounded-lg shadow-xl p-10 transition-transform w-96 text-center">
       <h1 className="text-large-semi uppercase mb-6">
-        Become a Medusa Store Member
+        Become a Orgita Store Member
       </h1>
       <p className="text-center text-base-regular text-ui-fg-base mb-4">
         Create your Medusa Store Member profile, and get access to an enhanced
@@ -85,10 +86,10 @@ const Register = ({ setCurrentView }: Props) => {
           onClick={() => setCurrentView(LOGIN_VIEW.SIGN_IN)}
           className="underline"
         >
-          Sign in
+          Sign in.
         </button>
-        .
       </span>
+      </div>
     </div>
   )
 }
