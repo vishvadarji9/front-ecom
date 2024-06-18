@@ -9,6 +9,7 @@ import { Fragment } from "react"
 import LocalizedClientLink from "@modules/common/components/localized-client-link"
 import CountrySelect from "../country-select"
 
+
 const SideMenuItems = {
   Home: "/",
   Store: "/store",
@@ -100,4 +101,4 @@ const SideMenu = ({ regions }: { regions: Region[] | null }) => {
   )
 }
 
-export default SideMenu
+export default SideMenu;
