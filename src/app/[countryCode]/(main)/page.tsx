@@ -1,11 +1,19 @@
+
+
 import { Product } from "@medusajs/medusa"
 import { Metadata } from "next"
+
+// "use client"
 
 import { getCollectionsList, getProductsList, getRegion } from "@lib/data"
 import FeaturedProducts from "@modules/home/components/featured-products"
 import Hero from "@modules/home/components/hero"
 import { ProductCollectionWithPreviews } from "types/global"
 import { cache } from "react"
+
+// Add the code
+import ContactUs from "@modules/contact-us"
+// import { LOGIN_VIEW } from "@modules/account/templates/login-template" 
 
 export const metadata: Metadata = {
   title: "Medusa Next.js Starter Template",
@@ -66,6 +74,12 @@ export default async function Home({
     return null
   }
 
+// Adding function
+
+  // function setCurrentView(view: LOGIN_VIEW): void {
+  //   throw new Error("Function not implemented.")
+  // }
+
   return (
     <>
       <Hero />
@@ -74,6 +88,7 @@ export default async function Home({
           <FeaturedProducts collections={collections} region={region} />
         </ul>
       </div>
+      <ContactUs />
     </>
   )
 }
