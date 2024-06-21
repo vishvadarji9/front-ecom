@@ -6,8 +6,14 @@ import FeaturedProducts from "@modules/home/components/featured-products"
 import Hero from "@modules/home/components/hero"
 import { ProductCollectionWithPreviews } from "types/global"
 import { cache } from "react"
+<<<<<<< HEAD
 // import Team from "./team/page"
 import Teams from "@modules/home/components/Teams"
+=======
+// import Prod from "@modules/home/components/ourproducts/ourproducts"
+// import About from "@modules/home/components/about/about"
+import Blog from "@modules/home/components/blog/blog"
+>>>>>>> aad0dac442fd39d1bf52adef1f4737e0527d011c
 
 
 export const metadata: Metadata = {
@@ -71,13 +77,25 @@ export default async function Home({
 
   return (
     <>
+    
       <Hero />
+<<<<<<< HEAD
       <Teams />
+=======
+      {/* <About /> */}
+      <Blog />
+      {/* <Prod /> */}
+>>>>>>> aad0dac442fd39d1bf52adef1f4737e0527d011c
       <div className="py-12">
         <ul className="flex flex-col gap-x-6">
           <FeaturedProducts collections={collections} region={region} />
         </ul>
+       
+        
       </div>
+  
+     
     </>
+    
   )
 }
