@@ -29,7 +29,7 @@ const Story1: React.FC = () => {
 
         <p className="description">
           <h3>Consider the Formulation</h3>
-         <p>When choosing a serum, consider whether it is water-based or oil-based; water-based serums are lighter and better for oily or acne-prone skin, while oil-based serums are more hydrating and suitable for dry skin. Additionally, pay attention to the concentration of active ingredients; high-concentration serums can be more effective but also more potent, so it's wise to start with a lower concentration if you have sensitive skin.</p>
+         <p>{`When choosing a serum, consider whether it is water-based or oil-based; water-based serums are lighter and better for oily or acne-prone skin, while oil-based serums are more hydrating and suitable for dry skin. Additionally, pay attention to the concentration of active ingredients; high-concentration serums can be more effective but also more potent, so it's wise to start with a lower concentration if you have sensitive skin.`}</p>
         </p><br />
         <p className="description">
           <h3>Brand Reputation and Reviews</h3>
@@ -41,7 +41,7 @@ const Story1: React.FC = () => {
         </p><br />
         <p className="description">
           <h3>Price and Packaging</h3>
-           <p>When choosing an organic serum, it's important to consider your budget. While these serums can be more expensive, there are options available at various price points. Additionally, pay attention to the packaging. Dark glass bottles are preferable as they protect the ingredients from light exposure, which can degrade the effectiveness of the serum.</p>
+           <p>{`When choosing an organic serum, it's important to consider your budget. While these serums can be more expensive, there are options available at various price points. Additionally, pay attention to the packaging. Dark glass bottles are preferable as they protect the ingredients from light exposure, which can degrade the effectiveness of the serum.`}</p>
         </p><br />
       </div>
       <Link href="/blog">

@@ -694,10 +694,12 @@ import { RiArrowDropDownLine } from "react-icons/ri";
 import { CgProfile } from "react-icons/cg";
 
 export default function Nav() {
+  const sidebarRef = useRef<HTMLDivElement>(null);
+  // const [isSidebarOpen, setIsSidebarOpen] = React.useState(false);
   const [regions, setRegions] = useState([]);
   const [isProductDropdownOpen, setIsProductDropdownOpen] = useState(false);
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
-  const sidebarRef = useRef(null);
+  // const sidebarRef = useRef(null);
 
   useEffect(() => {
     const fetchRegions = async () => {
@@ -713,11 +715,16 @@ export default function Nav() {
     setIsProductDropdownOpen(!isProductDropdownOpen);
   };
 
-  const handleOutsideClick = (event) => {
-    if (sidebarRef.current && !sidebarRef.current.contains(event.target)) {
+  const handleOutsideClick = (event: MouseEvent) => {
+    if (sidebarRef.current && !sidebarRef.current.contains(event.target as Node)) {
       setIsSidebarOpen(false);
     }
   };
+  // const handleOutsideClick = (event) => {
+  //   if (sidebarRef.current && !sidebarRef.current.contains(event.target)) {
+  //     setIsSidebarOpen(false);
+  //   }
+  // };
 
   useEffect(() => {
     if (isSidebarOpen) {
@@ -739,7 +746,7 @@ export default function Nav() {
             <div className="h-full">
               <Image
                 src={require('../../../../../../organic-ecomm-storefront/public/logo-orgita.svg')}
-                width={200} height={10} style={{ height: '70px' }}
+                width={200} height={10} style={{ height: '70px' }} alt="img"
               />
             </div>
           </div>
@@ -837,7 +844,7 @@ export default function Nav() {
             <div className="menu-bar" id="#menu-bar" onClick={() => setIsSidebarOpen(!isSidebarOpen)}>
               <Image
                 src={require('../../../../../../organic-ecomm-storefront/public/menu-bar.svg')}
-                width={40} height={10} style={{ height: '25px' }} />
+                width={40} height={10} style={{ height: '25px' }} alt="img2"/>
 
               <div ref={sidebarRef} className={`sidebar ${isSidebarOpen ? 'open' : ''}`} id="sidebar" onClick={(e) => e.stopPropagation()}>
                 <div className="sidenav">

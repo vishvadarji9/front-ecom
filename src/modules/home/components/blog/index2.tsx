@@ -29,7 +29,7 @@ const Story2: React.FC = () => {
 
         <p className="description">
           <h3>Consider the Formulation</h3>
-         <p>Gel-based washes are lighter and better for oily or acne-prone skin, while cream-based washes are more hydrating and suitable for dry skin. Pay attention to the concentration of active ingredients; higher concentrations can be more effective but may also be more potent, so it's wise to start with a gentler formulation if you have sensitive skin.</p>
+         <p>{`Gel-based washes are lighter and better for oily or acne-prone skin, while cream-based washes are more hydrating and suitable for dry skin. Pay attention to the concentration of active ingredients; higher concentrations can be more effective but may also be more potent, so it's wise to start with a gentler formulation if you have sensitive skin.`}</p>
         </p><br />
         <p className="description">
           <h3>Brand Reputation and Reviews</h3>
@@ -41,7 +41,7 @@ const Story2: React.FC = () => {
         </p><br />
         <p className="description">
           <h3>Price and Packaging</h3>
-           <p>When choosing an organic body wash, it's important to consider your budget. While these body washes can be more expensive, there are options available at various price points. Additionally, pay attention to the packaging. Dark bottles are preferable as they protect the ingredients from light exposure, which can degrade the effectiveness of the body wash.</p>
+           <p>{`When choosing an organic body wash, it's important to consider your budget. While these body washes can be more expensive, there are options available at various price points. Additionally, pay attention to the packaging. Dark bottles are preferable as they protect the ingredients from light exposure, which can degrade the effectiveness of the body wash.`}</p>
         </p><br />
       </div>
       <Link href="/blog">

@@ -9,7 +9,7 @@ const Story5: React.FC = () => {
       <Image src={require('../../../../../../organic-ecomm-storefront/public/blog4.jpg')} alt="Story Image" className="center" width={500} height={500} />
       <div className="title-container">
         <h1>Hair Care</h1>
-        <h2 className="title"><p>The Importance of Hair Care: Hair care is a crucial aspect of overall grooming and well-being, as it involves maintaining the health, cleanliness, and style of one's hair.  </p></h2>
+        <h2 className="title"><p>{`The Importance of Hair Care: Hair care is a crucial aspect of overall grooming and well-being, as it involves maintaining the health, cleanliness, and style of one's hair.`}  </p></h2>
       </div>
       <div className="description-container">
         <p className="description"><strong><u>Tips for Choosing the Right Organic Hair Care</u></strong></p><br />
@@ -30,7 +30,7 @@ const Story5: React.FC = () => {
 
         <p className="description">
           <h3>Consider the Formulation</h3>
-         <p>When selecting a hair serum, consider whether it is water-based or oil-based. Water-based serums are lighter and more suitable for oily or fine hair, as they won't weigh the hair down. On the other hand, oil-based serums are more hydrating and suitable for dry or coarse hair, as they help to moisturize and add shine. Additionally, pay attention to the concentration of active ingredients. Higher concentrations can be more effective but may also be more potent, so if you have sensitive scalp or hair, start with a lower concentration to avoid potential irritation.</p>
+         <p>{`When selecting a hair serum, consider whether it is water-based or oil-based. Water-based serums are lighter and more suitable for oily or fine hair, as they won't weigh the hair down. On the other hand, oil-based serums are more hydrating and suitable for dry or coarse hair, as they help to moisturize and add shine. Additionally, pay attention to the concentration of active ingredients. Higher concentrations can be more effective but may also be more potent, so if you have sensitive scalp or hair, start with a lower concentration to avoid potential irritation.`}</p>
         </p><br />
 
         <p className="description">
@@ -40,12 +40,12 @@ const Story5: React.FC = () => {
 
         <p className="description">
           <h3>Patch Test</h3>
-          <p>Before applying a new hair serum to your entire scalp or hair, it's wise to perform a patch test on a small area to check for any adverse reactions. This simple step can help you avoid potential irritation or allergic reactions, ensuring that the serum is safe for use on your hair and scalp.</p>
+          <p>{`Before applying a new hair serum to your entire scalp or hair, it's wise to perform a patch test on a small area to check for any adverse reactions. This simple step can help you avoid potential irritation or allergic reactions, ensuring that the serum is safe for use on your hair and scalp.`}</p>
         </p><br />
 
         <p className="description">
           <h3>Price and Packaging</h3>
-           <p>When selecting an organic hair serum, it's essential to consider your budget, as these serums can vary widely in price. However, there are options available at various price points, so you can find one that fits your budget. Additionally, pay attention to the packaging of the hair serum. Dark glass bottles are preferable, as they help protect the ingredients from light exposure, which can degrade the effectiveness of the serum and ensure its potency over time.</p>
+           <p>{`When selecting an organic hair serum, it's essential to consider your budget, as these serums can vary widely in price. However, there are options available at various price points, so you can find one that fits your budget. Additionally, pay attention to the packaging of the hair serum. Dark glass bottles are preferable, as they help protect the ingredients from light exposure, which can degrade the effectiveness of the serum and ensure its potency over time.`}</p>
         </p><br />
       </div>
 

@@ -43,7 +43,7 @@ const Story4: React.FC = () => {
 
         <p className="description">
           <h3>Price and Packaging</h3>
-           <p>When selecting an organic face cream, it's essential to consider your budget, as these creams can vary widely in price. However, there are options available at various price points, so you can find one that fits your budget. Additionally, pay attention to the packaging of the face cream. Dark glass bottles are preferable, as they help protect the ingredients from light exposure, which can degrade the effectiveness of the cream.</p>
+           <p>{`When selecting an organic face cream, it's essential to consider your budget, as these creams can vary widely in price. However, there are options available at various price points, so you can find one that fits your budget. Additionally, pay attention to the packaging of the face cream. Dark glass bottles are preferable, as they help protect the ingredients from light exposure, which can degrade the effectiveness of the cream.`}</p>
         </p><br />
       </div>
       <Link href="/blog">
