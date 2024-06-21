@@ -37,7 +37,7 @@ export default async function Footer() {
             <div className="logo lg:mr-10 md:mr-10 sm:mr-10 xsmall:mr-10 h-36 w-50 -mt-8">
               <Image
                 className="xsmall:ml-0 -ml-7 w-56 h-24"
-                src={require("../../../../../../front-ecom/public/logo-orgita.svg")}
+                src={require("../../../../../public/logo-orgita.svg")}
                 alt="SVG logo"
               />
               <p className="text-sm w-52 -ml-0 xsmall:ml-7 text-orange-950">
