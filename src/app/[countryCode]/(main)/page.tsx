@@ -7,7 +7,8 @@ import Hero from "@modules/home/components/hero"
 import { ProductCollectionWithPreviews } from "types/global"
 import { cache } from "react"
 // import Prod from "@modules/home/components/ourproducts/ourproducts"
-import About from "@modules/home/components/about/about"
+// import About from "@modules/home/components/about/about"
+import Blog from "@modules/home/components/blog/blog"
 
 
 export const metadata: Metadata = {
@@ -73,7 +74,8 @@ export default async function Home({
     <>
     
       <Hero />
-      <About />
+      {/* <About /> */}
+      <Blog />
       {/* <Prod /> */}
       <div className="py-12">
         <ul className="flex flex-col gap-x-6">
