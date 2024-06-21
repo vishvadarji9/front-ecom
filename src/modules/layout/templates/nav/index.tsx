@@ -745,7 +745,7 @@ export default function Nav() {
           <div className="flex flex-1 basis-0 h-full items-center">
             <div className="h-full">
               <Image
-                src={require('../../../../../../organic-ecomm-storefront/public/logo-orgita.svg')}
+                src={require('../../../../../public/logo-orgita.svg')}
                 width={200} height={10} style={{ height: '70px' }} alt="img"
               />
             </div>
@@ -843,7 +843,7 @@ export default function Nav() {
           <div className="menu-bar" id="#menu-bar">
             <div className="menu-bar" id="#menu-bar" onClick={() => setIsSidebarOpen(!isSidebarOpen)}>
               <Image
-                src={require('../../../../../../organic-ecomm-storefront/public/menu-bar.svg')}
+                src={require('../../../../../public/menu-bar.svg')}
                 width={40} height={10} style={{ height: '25px' }} alt="img2"/>
 
               <div ref={sidebarRef} className={`sidebar ${isSidebarOpen ? 'open' : ''}`} id="sidebar" onClick={(e) => e.stopPropagation()}>

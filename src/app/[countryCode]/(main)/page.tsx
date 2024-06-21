@@ -2,14 +2,13 @@
 
 import { Product } from "@medusajs/medusa"
 import { Metadata } from "next"
-
-// "use client"
-
 import { getCollectionsList, getProductsList, getRegion } from "@lib/data"
 import FeaturedProducts from "@modules/home/components/featured-products"
 import Hero from "@modules/home/components/hero"
 import { ProductCollectionWithPreviews } from "types/global"
 import { cache } from "react"
+import About from "./about/page"
+import Deal from "@modules/home/components/deal/page"
 // import Prod from "@modules/home/components/ourproducts/ourproducts"
 // import About from "@modules/home/components/about/about"
 import Blog from "@modules/home/components/blog/blog"
@@ -89,6 +88,8 @@ export default async function Home({
     <>
     
       <Hero />
+      <About/>
+      <Deal />
       <UserTestimonials />
       {/* <About /> */}
       <Blog />
@@ -100,8 +101,7 @@ export default async function Home({
        
         
       </div>
-  
-     
+    
     </>
     
   )
