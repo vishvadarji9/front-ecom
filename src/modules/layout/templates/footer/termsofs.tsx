@@ -15,10 +15,10 @@ const TermsOfService: React.FC = () => {
             <strong>Introduction</strong>
           </h3>
           <p>
-            Welcome to Orgita. These Terms of Service govern your use of
+            {`Welcome to Orgita. These Terms of Service govern your use of
             Orgita's website. By accessing this website, you agree to be bound
             by these terms and conditions. If you disagree with any part of
-            these terms, please do not use our website.
+            these terms, please do not use our website.`}
           </p>
         </p>
         <br />
@@ -60,14 +60,14 @@ const TermsOfService: React.FC = () => {
             <strong>No Warranties</strong>
           </h3>
           <p>
-            This website is provided "as is" without any representations or
+           {` This website is provided "as is" without any representations or
             warranties, express or implied. Orgita makes no representations or
             warranties in relation to this website or the information and
             materials provided on this website. Without prejudice to the
             generality of the foregoing paragraph, Orgita does not warrant that
             this website will be constantly available, or available at all, or
             that the information on this website is complete, true, accurate, or
-            non-misleading.
+            non-misleading.`}
           </p>
         </p>
         <br />
@@ -87,11 +87,11 @@ const TermsOfService: React.FC = () => {
             <strong>Other Parties</strong>
           </h3>
           <p>
-            You accept that, as a limited liability entity, Orgita has an
+            {`You accept that, as a limited liability entity, Orgita has an
             interest in limiting the personal liability of its officers and
             employees. You agree that you will not bring any claim personally
             against Orgita's officers or employees in respect of any losses you
-            suffer in connection with the website.
+            suffer in connection with the website.`}
           </p>
         </p>
         <br />
@@ -124,9 +124,9 @@ const TermsOfService: React.FC = () => {
             <strong>Assignment</strong>
           </h3>
           <p>
-            Orgita may transfer, sub-contract, or otherwise deal with Orgita's
+           {` Orgita may transfer, sub-contract, or otherwise deal with Orgita's
             rights and/or obligations under these terms and conditions without
-            notifying you or obtaining your consent.
+            notifying you or obtaining your consent.`}
           </p>
         </p>
         <br />

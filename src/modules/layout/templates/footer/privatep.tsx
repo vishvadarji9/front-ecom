@@ -51,7 +51,7 @@ const PrivateP: React.FC = () => {
             <strong>Use of Information</strong>
           </h3>
           <p>
-            We use your personal information to help us provide personalized
+           {` We use your personal information to help us provide personalized
             features, tailor our sites to your interests, get in touch with you
             when necessary, provide the services requested by you, and preserve
             social history as governed by existing law or policy. We will not
@@ -67,7 +67,7 @@ const PrivateP: React.FC = () => {
             as compliance with subpoenas, court orders, requests/orders, or
             notices from legal authorities or law enforcement agencies requiring
             such disclosure. We share your information with advertisers on an
-            aggregate basis only.
+            aggregate basis only. `}
           </p>
         </p>
         <br />

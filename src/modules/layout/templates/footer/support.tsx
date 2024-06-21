@@ -12,7 +12,7 @@ const Support: React.FC = () => {
       <div className="description-container">
         <p className="description">
           <h3>
-            <strong>We're Here to Help</strong>
+            <strong>{` We're Here to Help `}</strong>
           </h3>
           <p>
             At Orgita, we are committed to providing exceptional support to

@@ -15,11 +15,11 @@ const RefundP: React.FC = () => {
             <strong>Eligibility for Refund</strong>
           </h3>
           <p>
-            We offer a 30-day return policy, which means you have 30 days after
+           {` We offer a 30-day return policy, which means you have 30 days after
             receiving your item to request a return. To be eligible for a
             return, your item must be in the same condition that you received
             it, unworn or unused, with tags, and in its original packaging.
-            You’ll also need the receipt or proof of purchase.
+            You’ll also need the receipt or proof of purchase. `}
           </p>
         </p>
         <br />
@@ -28,13 +28,13 @@ const RefundP: React.FC = () => {
             <strong>Refund Process</strong>
           </h3>
           <p>
-            Once your return is received and inspected, we will send you an
+            {`Once your return is received and inspected, we will send you an
             email to notify you that we have received your returned item. We
             will also notify you of the approval or rejection of your refund.
             <br /> If your refund is approved, the refund will be processed, and
             a credit will automatically be applied to your original method of
             payment, within a certain number of days, depending on your card
-            issuer's policies.
+            issuer's policies.`}
           </p>
         </p>
         <br />

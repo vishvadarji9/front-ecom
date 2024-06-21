@@ -22,9 +22,9 @@ const UserTestimonials = () => {
             />
           </div>
           <p className="text-gray-700 mb-4 group-hover:text-white">
-            "Orgita's customer service is as amazing as their products! I had
+            {` "Orgita's customer service is as amazing as their products! I had
             some questions about which products would be best for my combination
-            skin, and their team was so helpful and knowledgeable."
+            skin, and their team was so helpful and knowledgeable." `}
           </p>
           <div className="text-xl font-semibold text-black group-hover:text-yellow-300 mb-2">
             ★★★★★
@@ -46,9 +46,9 @@ const UserTestimonials = () => {
             />
           </div>
           <p className="text-gray-700 mb-4 group-hover:text-white">
-            "Great customer service! The Nourishing Face Oil and Gentle
+            {` "Great customer service! The Nourishing Face Oil and Gentle
             Exfoliating Scrub made my skin brighter and softer. I'm so happy to have
-            found a brand that aligns with my values and actually works."
+            found a brand that aligns with my values and actually works." `}
           </p>
           <div className="text-xl font-semibold text-black group-hover:text-yellow-300 mb-2">
             ★★★★★
@@ -72,9 +72,9 @@ const UserTestimonials = () => {
             />
           </div>
           <p className="text-gray-700 mb-4 group-hover:text-white">
-            "I started using Orgita products about three months ago, and I can't
+            {` "I started using Orgita products about three months ago, and I can't
             believe the difference they've made. I'm so happy to have
-            found a brand that aligns with my values and actually works."
+            found a brand that aligns with my values and actually works." `}
           </p>
           <div className="text-xl font-semibold text-black group-hover:text-yellow-300 mb-2">
             ★★★★★

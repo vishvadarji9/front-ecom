@@ -180,8 +180,8 @@ export default async function Footer() {
                     // href="https://docs.medusajs.com"
                     // href="http://localhost:8000/in/store"
                     href="/store"
-                    target="_blank"
-                    rel="noreferrer"
+                    // target="_blank"
+                    // rel="noreferrer"
                     className="hover:text-ui-fg-base"
                   >
                     Products
