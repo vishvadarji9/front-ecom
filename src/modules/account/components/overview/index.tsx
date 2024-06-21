@@ -12,34 +12,34 @@ type OverviewProps = {
 
 const Overview = ({ customer, orders }: OverviewProps) => {
   return (
-    // <div data-testid="overview-page-wrapper">
-    <div data-testid="overview-page-wrapper" className="p-8 bg-gray-100">
+    <div data-testid="overview-page-wrapper">
+    {/* <div data-testid="overview-page-wrapper" className="p-8 bg-gray-100"> */}
       <div className="hidden small:block">
         <div className="text-xl-semi flex justify-between items-center mb-4">
           <span data-testid="welcome-message" data-value={customer?.first_name}>Hello {customer?.first_name}</span>
-          <span className="text-base text-gray-600">
-          {/* <span className="text-small-regular text-ui-fg-base"> */}
+          {/* <span className="text-base text-gray-600"> */}
+          <span className="text-small-regular text-ui-fg-base">
             Signed in as:{" "}
             <span className="font-semibold" data-testid="customer-email" data-value={customer?.email}>{customer?.email}</span>
           </span>
         </div>
-        {/* <div className="flex flex-col py-8 border-t border-gray-200"> */}
-        <div className="flex flex-col py-8 border-t border-gray-300">
-          {/* <div className="flex flex-col gap-y-4 h-full col-span-1 row-span-2 flex-1"> */}
-          <div className="flex flex-col gap-y-8">
-            {/* <div className="flex items-start gap-x-16 mb-6"> */}
-            <div className="flex items-start gap-x-16 mb-8">  
-              {/* <div className="flex flex-col gap-y-4"> */}
+        <div className="flex flex-col py-8 border-t border-gray-200">
+        {/* <div className="flex flex-col py-8 border-t border-gray-300"> */}
+          <div className="flex flex-col gap-y-4 h-full col-span-1 row-span-2 flex-1">
+          {/* <div className="flex flex-col gap-y-8"> */}
+            <div className="flex items-start gap-x-16 mb-6">
+            {/* <div className="flex items-start gap-x-16 mb-8">   */}
               <div className="flex flex-col gap-y-4">
-                {/* <h3 className="text-large-semi">Profile</h3> */}
-                <h3 className="text-xl font-semibold">Profile</h3>
+              {/* <div className="flex flex-col gap-y-4"> */}
+                <h3 className="text-large-semi">Profile</h3>
+                {/* <h3 className="text-xl font-semibold">Profile</h3> */}
                 <div className="flex items-end gap-x-2">
-                  {/* <span className="text-3xl-semi leading-none" data-testid="customer-profile-completion" data-value={getProfileCompletion(customer)}> */}
-                  <span className="text-3xl font-bold" data-testid="customer-profile-completion" data-value={getProfileCompletion(customer)}>
+                  <span className="text-3xl-semi leading-none" data-testid="customer-profile-completion" data-value={getProfileCompletion(customer)}>
+                  {/* <span className="text-3xl font-bold" data-testid="customer-profile-completion" data-value={getProfileCompletion(customer)}> */}
                     {getProfileCompletion(customer)}%
                   </span>
-                  {/* <span className="uppercase text-base-regular text-ui-fg-subtle"> */}
-                  <span className="uppercase text-sm text-gray-500">
+                  <span className="uppercase text-base-regular text-ui-fg-subtle">
+                  {/* <span className="uppercase text-sm text-gray-500"> */}
                     Completed
                   </span>
                 </div>

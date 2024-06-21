@@ -30,8 +30,8 @@ const AccountNav = ({
         {route !== `/${countryCode}/account` ? (
           <LocalizedClientLink
             href="/account"
-            // className="flex items-center gap-x-2 text-small-regular py-2"
-            className="flex items-center gap-x-2 text-sm py-2 text-gray-700 hover:text-gray-900"
+            className="flex items-center gap-x-2 text-small-regular py-2"
+            // className="flex items-center gap-x-2 text-sm py-2 text-gray-700 hover:text-gray-900"
             data-testid="account-main-link"
           >
             <>
@@ -41,8 +41,8 @@ const AccountNav = ({
           </LocalizedClientLink>
         ) : (
           <>
-            {/* <div className="text-xl-semi mb-4 px-8"> */}
-            <div className="text-lg mb-4 px-8">
+            <div className="text-xl-semi mb-4 px-8">
+            {/* <div className="text-lg mb-4 px-8"> */}
               Hello {customer?.first_name}
             </div>
             <div className="text-base-regular">
@@ -50,15 +50,15 @@ const AccountNav = ({
                 <li>
                   <LocalizedClientLink
                     href="/account/profile"
-                    className="flex items-center justify-between py-4 border-b border-gray-600 px-8"
+                    className="flex items-center justify-between py-4 border-b border-gray-200 px-8"
                     data-testid="profile-link"
                   >
                     <>
                       <div className="flex items-center gap-x-2">
-                        {/* <User size={20} /> */}
-                        <User className="w-5 h-5" />
-                        {/* <span>Profile</span> */}
-                        <span className="text-base">Profile</span>
+                        <User size={20} />
+                        {/* <User className="w-5 h-5" /> */}
+                        <span>Profile</span>
+                        {/* <span className="text-base">Profile</span> */}
                       </div>
                       <ChevronDown className="transform -rotate-90" />
                     </>
@@ -72,10 +72,10 @@ const AccountNav = ({
                   >
                     <>
                       <div className="flex items-center gap-x-2">
-                        {/* <MapPin size={20} /> */}
-                        <User className="w-5 h-5" />
-                        {/* <span>Addresses</span> */}
-                        <span className="text-base">Addresses</span>
+                        <MapPin size={20} />
+                        {/* <User className="w-5 h-5" /> */}
+                        <span>Addresses</span>
+                        {/* <span className="text-base">Addresses</span> */}
                       </div>
                       <ChevronDown className="transform -rotate-90" />
                     </>
@@ -118,8 +118,8 @@ const AccountNav = ({
       <div className="hidden small:block" data-testid="account-nav">
         <div>
           <div className="pb-4">
-            {/* <h3 className="text-base-semi">Account</h3> */}
-            <h3 className="text-lg">Account</h3>
+            <h3 className="text-base-semi">Account</h3>
+            {/* <h3 className="text-lg">Account</h3> */}
           </div>
           <div className="text-base-regular">
             <ul className="flex mb-0 justify-start items-start flex-col gap-y-4">
