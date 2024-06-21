@@ -7,6 +7,9 @@ import { ProductCollectionWithPreviews } from "types/global"
 import { cache } from "react"
 import About from "./about/page"
 import Deal from "@modules/home/components/deal/page"
+// import Prod from "@modules/home/components/ourproducts/ourproducts"
+// import About from "@modules/home/components/about/about"
+import Blog from "@modules/home/components/blog/blog"
 
 
 export const metadata: Metadata = {
@@ -70,15 +73,22 @@ export default async function Home({
 
   return (
     <>
+    
       <Hero />
       <About/>
       <Deal />
+      {/* <About /> */}
+      <Blog />
+      {/* <Prod /> */}
       <div className="py-12">
         <ul className="flex flex-col gap-x-6">
           <FeaturedProducts collections={collections} region={region} />
         </ul>
+       
+        
       </div>
     
     </>
+    
   )
 }
