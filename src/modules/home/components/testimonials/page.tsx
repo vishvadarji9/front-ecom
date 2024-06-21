@@ -14,7 +14,7 @@ const UserTestimonials = () => {
         <div className="group h-max p-6 rounded-lg shadow-2xl text-center bg-orange-200 hover:bg-yellow-900 active:bg-yellow-900 focus:outline-none focus:ring focus:ring-orange-300">
           <div className="mb-4 p-1 group-hover:border-white">
             <Image
-              src={require("../../../../../../front-ecom/public/profile-1.svg")}
+              src={require("../../../../../public/profile-1.svg")}
               alt="image"
               width={150}
               height={150}
@@ -38,7 +38,7 @@ const UserTestimonials = () => {
         <div className="group h-max p-6 rounded-lg shadow-2xl text-center bg-orange-200 hover:bg-yellow-900 active:bg-yellow-900 focus:outline-none focus:ring focus:ring-orange-300">
           <div className="mb-4 p-1 group-hover:border-white">
             <Image
-              src={require("../../../../../../front-ecom/public/profile-2.svg")}
+              src={require("../../../../../public/profile-2.svg")}
               alt="image"
               width={150}
               height={150}
@@ -64,7 +64,7 @@ const UserTestimonials = () => {
         <div className="group h-max p-6 rounded-lg shadow-2xl text-center bg-orange-200 hover:bg-yellow-900 active:bg-yellow-900 focus:outline-none focus:ring focus:ring-orange-300">
           <div className="mb-4 p-1 group-hover:border-white">
             <Image
-              src={require("../../../../../../front-ecom/public/profile-3.svg")}
+              src={require("../../../../../public/profile-3.svg")}
               alt="image"
               width={150}
               height={150}
