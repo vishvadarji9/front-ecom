@@ -1,0 +1,156 @@
+.container {
+    padding: 20px;
+    text-align: justify;
+    position: relative;
+    left: 10px;
+}
+
+.description p {
+    justify-content: center;
+    text-align: justify;
+    align-items: center;
+    padding-left: 300px;
+    padding-right: 250px;
+}
+
+/* .title p {
+    justify-content: center;
+    text-align: justify;
+    font-weight: bold;
+    padding-left: 400px;
+    padding-right: 400px;
+} */
+
+.title {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: xx-large;
+    position: relative;
+    font-family: cursive;
+    color: brown;
+    margin-bottom: 50px;
+}
+
+/* .title {
+    font-size: 24px;
+    margin: 0;
+} */
+
+/* .center {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    height: auto;
+} */
+
+.description-container {
+    margin-top: 20px;
+}
+
+.description {
+    font-size: 16px;
+    line-height: 1.6;
+    text-align: center;
+}
+
+h3 {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+@media (max-width: 1200px) {
+
+    .container {
+        padding-right: -10%;
+    }
+
+    .description p {
+        padding-left: 15%;
+        padding-right: 15%;
+    }
+
+    h1 {
+        font-size: x-large;
+    }
+}
+
+@media (max-width: 992px) {
+    .description p {
+        padding-left: 10%;
+        padding-right: 5%;
+    }
+
+    .description {
+        font-size: 15px;
+    }
+
+    h1 {
+        font-size: large;
+    }
+
+    h3 {
+        font-size: 17px;
+        font-weight: bold;
+    }
+}
+
+@media (max-width: 768px) {
+    .description p {
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+
+    .description {
+        font-size: 14px;
+    }
+
+    h1 {
+        font-size: large;
+    }
+
+    h3 {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 576px) {
+    .description p {
+        padding-left: 10%;
+        padding-right: -70%;
+    }
+
+    .description {
+        font-size: 13px;
+    }
+
+    h1 {
+        font-size: large;
+    }
+
+    h3 {
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 470px) {
+    .description p {
+        padding-left: 10px;
+        padding-right: -50px;
+    }
+
+    .description {
+        font-size: 13px;
+    }
+
+    h1 {
+        font-size: large;
+    }
+
+    h3 {
+        font-size: 15px;
+    }
+}

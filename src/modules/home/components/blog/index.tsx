@@ -6,7 +6,7 @@ import '../blog/sty2.css';
 const Story1: React.FC = () => {
   return (
     <div className="container">
-      <Image src={require('../../../../../../organic-ecomm-storefront/public/blog1.jpg')} alt="Story Image" className="center" width={500} height={500} />
+      <Image src={require('../../../../../public/blog1.jpg')} alt="Story Image" className="center" width={500} height={500} />
       <div className="title-container">
         <h1>Face care</h1>
         <h2 className="title"><p>The Importance of Face Serum: Serums make your skin more radiant and help in reducing fine lines. </p></h2>

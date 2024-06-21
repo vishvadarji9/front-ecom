@@ -106,8 +106,9 @@ type Props = {}
 
 const Blog = (props: Props) => {
   return (
+    
     <div>
-      <div className='h1'><Image src={require('../../../../../../organic-ecomm-storefront/public/MiniBlog.png')} width={300} height={300} alt="Image 1" />
+      <div className='h1'><Image src={require('../../../../../public/MiniBlog.png')} width={300} height={300} alt="Image 1" />
       </div>
       <div className="wrapper">
         <div className="box">
@@ -116,7 +117,7 @@ const Blog = (props: Props) => {
                  
                   href="/blog"
           > 
-          <Image src={require('../../../../../../organic-ecomm-storefront/public/blog1.jpg')} width={500} height={500} alt="Image 1" className='img'/>
+          <Image src={require('../../../../../public/blog1.jpg')} width={500} height={500} alt="Image 1" className='img'/>
           </LocalizedClientLink>
           
           <div className="card-title">The AI magically removes moving <br /> objects from videos.</div>
@@ -127,7 +128,7 @@ const Blog = (props: Props) => {
                  
                  href="/blog2"
          > 
-            <Image src={require('../../../../../../organic-ecomm-storefront/public/blog2.jpg')} width={500} height={500} alt="Image 2" className='img' id='img2'/>
+            <Image src={require('../../../../../public/blog2.jpg')} width={500} height={500} alt="Image 2" className='img' id='img2'/>
             </LocalizedClientLink>
 
           <div className="card-title">The AI magically removes moving <br /> objects from videos.</div>
@@ -135,7 +136,7 @@ const Blog = (props: Props) => {
         </div>
         <div className="box">
          <LocalizedClientLink href='/blog3'>
-            <Image src={require('../../../../../../organic-ecomm-storefront/public/blog3.jpg')} width={500} height={500} alt="Image 3" className='img'/>
+            <Image src={require('../../../../../public/blog3.jpg')} width={500} height={500} alt="Image 3" className='img'/>
           </LocalizedClientLink>
           <div className="card-title">The AI magically removes moving <br /> objects from videos.</div>
           <div className="card-date">July 19, 2019</div>
@@ -143,7 +144,7 @@ const Blog = (props: Props) => {
 
         <div className="box">
           <LocalizedClientLink href='/blog4'>
-            <Image src={require('../../../../../../organic-ecomm-storefront/public/blog5.jpg')} width={500} height={500} alt="Image 4" className='img'/>
+            <Image src={require('../../../../../public/blog5.jpg')} width={500} height={500} alt="Image 4" className='img'/>
           </LocalizedClientLink>
           <div className="card-title">The AI magically removes moving <br /> objects from videos.</div>
           <div className="card-date">July 19, 2019</div>
@@ -151,7 +152,7 @@ const Blog = (props: Props) => {
 
         <div className="box">
           <LocalizedClientLink href='/blog5'>
-            <Image src={require('../../../../../../organic-ecomm-storefront/public/blog4.jpg')} width={500} height={500} alt="Image 5" className='img'/>
+            <Image src={require('../../../../../public/blog4.jpg')} width={500} height={500} alt="Image 5" className='img'/>
           </LocalizedClientLink>
           <div className="card-title">The AI magically removes moving <br /> objects from videos.</div>
           <div className="card-date">July 19, 2019</div>

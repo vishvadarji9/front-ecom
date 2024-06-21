@@ -1,3 +1,5 @@
+
+
 import { Product } from "@medusajs/medusa"
 import { Metadata } from "next"
 import { getCollectionsList, getProductsList, getRegion } from "@lib/data"
@@ -11,6 +13,11 @@ import Deal from "@modules/home/components/deal/page"
 // import About from "@modules/home/components/about/about"
 import Blog from "@modules/home/components/blog/blog"
 
+
+// Add the code
+import UserTestimonials from "../../../modules/home/components/testimonials/page"
+// import UserTestimonials from "@modules/home/components/UserTestinomials"
+// import { LOGIN_VIEW } from "@modules/account/templates/login-template" 
 
 export const metadata: Metadata = {
   title: "Medusa Next.js Starter Template",
@@ -71,12 +78,19 @@ export default async function Home({
     return null
   }
 
+// Adding function
+
+  // function setCurrentView(view: LOGIN_VIEW): void {
+  //   throw new Error("Function not implemented.")
+  // }
+
   return (
     <>
     
       <Hero />
       <About/>
       <Deal />
+      <UserTestimonials />
       {/* <About /> */}
       <Blog />
       {/* <Prod /> */}

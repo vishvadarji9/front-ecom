@@ -6,7 +6,7 @@ import '../blog/sty2.css';
 const Story4: React.FC = () => {
   return (
     <div className="container">
-      <Image src={require('../../../../../../organic-ecomm-storefront/public/blog5.jpg')} alt="Story Image" className="center" width={500} height={500} />
+      <Image src={require('../../../../../public/blog5.jpg')} alt="Story Image" className="center" width={500} height={500} />
       <div className="title-container">
         <h1>Face cream</h1>
         <h2 className="title"><p>The Importance of Face cream: Face cream is essential for maintaining healthy, hydrated skin.</p></h2>
