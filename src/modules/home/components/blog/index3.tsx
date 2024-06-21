@@ -6,7 +6,7 @@ import '../blog/sty2.css';
 const Story3: React.FC = () => {
   return (
     <div className="container">
-      <Image src={require('../../../../../../organic-ecomm-storefront/public/blog3.jpg')} alt="Story Image" className="center" width={500} height={500} />
+      <Image src={require('../../../../../public/blog3.jpg')} alt="Story Image" className="center" width={500} height={500} />
       <div className="title-container">
         <h1>Body care</h1>
         <h2 className="title"><p>The Importance of Body Cream: 

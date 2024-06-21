@@ -23,7 +23,7 @@ export function SubmitButton({
       className={className}
       type="submit"
       isLoading={pending}
-      variant={variant}
+      variant={variant ?? undefined}
       data-testid={dataTestId}
     >
       {children}
