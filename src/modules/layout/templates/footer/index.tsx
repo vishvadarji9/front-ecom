@@ -5,83 +5,20 @@ import { Text, clx } from "@medusajs/ui"
 import { getCategoriesList, getCollectionsList } from "@lib/data"
 
 import LocalizedClientLink from "@modules/common/components/localized-client-link"
-import MedusaCTA from "@modules/layout/components/medusa-cta"
+// import MedusaCTA from "@modules/layout/components/medusa-cta"
 
 import Image from "next/image"
 // import "../footer/styles.css"
-import { useState } from "react"
-// import { SubmitButton } from "@modules/checkout/components/submit-button"
-// import { ErrorMessage } from "@hookform/error-message"
-// import Input from "@modules/common/components/input"
-
-// import { logCustomerIn } from "@modules/account/actions"
-// import { useFormState } from "react-dom"
-// import { LOGIN_VIEW } from "@modules/account/templates/login-template"
-
-
-// import Input from "@modules/common/components/input"
-
-// import { useForm } from "react-hook-form";
-// import { z } from "zod";
-// import { zodResolver } from "@hookform/resolvers/zod";
-// import { Button } from "@medusajs/ui"
-
-// type Props = {
-//   setCurrentView: (view: LOGIN_VIEW) => void
-// }
-
-// const [formData, setFormData] = useState({
-//   email: "",
-// });
-
-// const [errorMessage, setErrorMessage] = useState<{[key: string]: any}  | null>(null);
-
-// const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-//   setFormData({ ...formData, [e.target.name]: e.target.value });
-// };
-
-// const handleSubmit = (e: React.FormEvent) => {
-//   e.preventDefault();
-//   // For now, just log the form data to the console
-//   console.log(formData);
-//   // Clear the form after submission
-//   setFormData({
-//     email: "",
-//   });
-//   setErrorMessage(null);
-// };
 
 export default async function Footer() {
   const { collections } = await getCollectionsList(0, 6)
   const { product_categories } = await getCategoriesList(0, 6)
 
-  // export default async function Footer() {
-  //   const [message, formAction] = useFormState(logCustomerIn, null)
-
-  //     const { collections } = await getCollectionsList(0, 6)
-  //     const { product_categories } = await getCategoriesList(0, 6)
-
-  //  const emailSchema = z.object({
-  //     email: z.string().email({ message: "Invalid email address" }),
-  //   });
-
-  //   type EmailFormValues = z.infer<typeof emailSchema>;
-
-  //   const Footer: React.FC = () => {
-  //     const { register, handleSubmit, formState: { errors } } = useForm<EmailFormValues>({
-  //       resolver: zodResolver(emailSchema),
-  //     });
-
-  //     // Handle the click event
-  //     const onSubmit = (data: EmailFormValues) => {
-  //       console.log('Email Address:', data.email);
-  //     };
-
   return (
-    <footer className="border-t-0 border-ui-border-base w-full">
+    <footer className="border-t-0 border-ui-border-base w-full  ">
       <div className="content-container flex flex-col w-full">
         {/* <div className="flex flex-col gap-y-6 xsmall:flex-row items-start justify-between py-40"> */}
-        <div className="flex flex-col gap-y-6 xsmall:flex-row items-start justify-between py-40">
+        <div className="flex flex-col gap-y-6 xsmall:flex-row items-start justify-between py-16">
           <div>
             {/* <LocalizedClientLink
               href="/"
@@ -97,44 +34,17 @@ export default async function Footer() {
               <img src="/orgitalogo.svg" alt="SVG logo" />
             </LocalizedClientLink> */}
 
-            <div className="logo lg:mr-10 md:mr-10 sm:mr-10 xsmall:mr-10 h-36 w-50 -mt-5">
-              <Image className="xsmall:ml-0 -ml-7 w-56 h-24"
-                src={require("../../../../../../front-ecom/public/orgitalogo.svg")}
+            <div className="logo lg:mr-10 md:mr-10 sm:mr-10 xsmall:mr-10 h-36 w-50 -mt-8">
+              <Image
+                className="xsmall:ml-0 -ml-7 w-56 h-24"
+                src={require("../../../../../../front-ecom/public/logo-orgita.svg")}
                 alt="SVG logo"
               />
-              <p className="text-sm w-52 -ml-0 xsmall:ml-7 text-lime-900">Orgita is an online marketplace specializing in organic products.</p>
+              <p className="text-sm w-52 -ml-0 xsmall:ml-7 text-orange-950">
+                Orgita is an online marketplace specializing in organic
+                products.
+              </p>
             </div>
-           {/* <form className="w-full flex flex-col" onSubmit={handleSubmit}>  
-        <div className="flex flex-col w-full gap-y-2">
-          <Input
-            label="Email"
-            name="email"
-            required
-            type="email"
-            autoComplete="email"
-            data-testid="email-input"
-            onChange={handleChange}
-            value={formData.email}
-          />
-        </div>
-        {errorMessage && <ErrorMessage errors={errorMessage} data-testid="email-error" name={""} />}
-        <SubmitButton className="w-full mt-6" data-testid="contact-button">
-          Join
-        </SubmitButton>
-      </form>  */}
-            {/* <form onSubmit={handleSubmit(onSubmit)} className="email-form-container">
-            <label htmlFor="email-ref">Email:</label>
-            <input
-              type="email"
-              id="email"
-              {...register('email')}
-              placeholder="Enter your email"
-            />
-            {errors.email && <p>{errors.email.message}</p>}
-            <Button variant="secondary" type="submit" value="submit">
-              Join
-            </Button>
-          </form> */}
           </div>
           {/* div className="text-small-regular gap-10 md:gap-x-16 grid grid-cols-2 sm:grid-cols-3"> */}
           <div className="text-small-regular gap-10 md:gap-x-16 grid md:grid-cols-3 lg:grid-cols-4 sm:grid-cols-2 xsmall:grid-cols-2">
@@ -197,12 +107,12 @@ export default async function Footer() {
               </div>
             )}
 
-            {collections && collections.length > 0 && (
-              <div className="flex flex-col gap-y-2">
-                {/* <span className="txt-small-plus txt-ui-fg-base">
+            {/* {collections && collections.length > 0 && (
+              <div className="flex flex-col gap-y-2"> */}
+            {/* <span className="txt-small-plus txt-ui-fg-base">
                   Collections
                 </span> */}
-                <span className="txt-small-plus txt-ui-fg-base">
+            {/* <span className="txt-small-plus txt-ui-fg-base text-base text-orange-950">
                   Ouick Links
                 </span>
                 <ul
@@ -215,14 +125,14 @@ export default async function Footer() {
                 >
                   {collections?.slice(0, 6).map((c) => (
                     <>
-                      <li key={c.id}>
-                        {/* <LocalizedClientLink
+                      <li key={c.id}> */}
+            {/* <LocalizedClientLink
                             className="hover:text-ui-fg-base"
                             href={`/collections/${c.handle}`}
                           >
                             {c.title}
                           </LocalizedClientLink> */}
-                        <LocalizedClientLink
+            {/* <LocalizedClientLink
                           className="hover:text-ui-fg-base"
                           href={`/collections/${c.handle}`}
                         >
@@ -247,13 +157,65 @@ export default async function Footer() {
                   ))}
                 </ul>
               </div>
-            )}
+            )} */}
+
             <div className="flex flex-col gap-y-2">
-              <span className="txt-small-plus txt-ui-fg-base">
-                Customer Service
+              <span className="txt-small-plus txt-ui-fg-base text-base text-orange-950">
+                Quick Links
               </span>
               <ul className="grid grid-cols-1 gap-y-2 text-ui-fg-subtle txt-small">
                 <li>
+                  <LocalizedClientLink
+                    // href="https://github.com/medusajs"
+                    href="http://localhost:8000/in/about"
+                    target="_blank"
+                    rel="noreferrer"
+                    className="hover:text-ui-fg-base"
+                  >
+                    About Us
+                  </LocalizedClientLink>
+                </li>
+                <li>
+                  <LocalizedClientLink
+                    // href="https://docs.medusajs.com"
+                    // href="http://localhost:8000/in/store"
+                    href="/store"
+                    target="_blank"
+                    rel="noreferrer"
+                    className="hover:text-ui-fg-base"
+                  >
+                    Products
+                  </LocalizedClientLink>
+                </li>
+                <li>
+                  {/* <a
+                    // href="https://github.com/medusajs/nextjs-starter-medusa"
+                    href="http://localhost:8000/in/contactus"
+                    target="_blank"
+                    rel="noreferrer"
+                    className="hover:text-ui-fg-base"
+                  >
+                    Contact Us
+                  </a> */}
+                  <LocalizedClientLink
+                    // href="https://github.com/medusajs/nextjs-starter-medusa"
+                    href='/contactus'
+                    // target="_blank"
+                    // rel="noreferrer"
+                    className="hover:text-ui-fg-base"
+                  >
+                    Contact Us
+                  </LocalizedClientLink>
+                </li>
+              </ul>
+            </div>
+
+            <div className="flex flex-col gap-y-2">
+              <span className="txt-small-plus txt-ui-fg-base text-base text-orange-950">
+                Customer Service
+              </span>
+              <ul className="grid grid-cols-1 gap-y-2 text-ui-fg-subtle txt-small">
+                {/* <li>
                   <a
                     href="https://github.com/medusajs"
                     target="_blank"
@@ -262,80 +224,80 @@ export default async function Footer() {
                   >
                     FAQs
                   </a>
-                </li>
+                </li> */}
                 <li>
-                  <a
-                    href="https://docs.medusajs.com"
-                    target="_blank"
-                    rel="noreferrer"
+                  <LocalizedClientLink
+                    href="/footer-ship"
+                    // target="_blank"
+                    // rel="noreferrer"
                     className="hover:text-ui-fg-base"
                   >
-                    Shipping & Returns
-                  </a>
+                    Shipping
+                  </LocalizedClientLink>
                 </li>
                 <li>
-                  <a
-                    href="https://github.com/medusajs/nextjs-starter-medusa"
-                    target="_blank"
-                    rel="noreferrer"
+                  <LocalizedClientLink
+                    href="/footer-t"
+                    // target="_blank"
+                    // rel="noreferrer"
                     className="hover:text-ui-fg-base"
                   >
-                    Order Tracking
-                  </a>
+                    Track Order
+                  </LocalizedClientLink>
                 </li>
                 <li>
-                  <a
-                    // href="https://github.com/medusajs/nextjs-starter-medusa"
-                    target="_blank"
-                    rel="noreferrer"
+                  <LocalizedClientLink
+                    href="/footer-s"
+                    // target="_blank"
+                    // rel="noreferrer"
                     className="hover:text-ui-fg-base"
                   >
                     Support
-                  </a>
+                  </LocalizedClientLink>
                 </li>
               </ul>
             </div>
 
             <div className="flex flex-col gap-y-2">
-              <span className="txt-small-plus txt-ui-fg-base">
+              <span className="txt-small-plus txt-ui-fg-base text-base text-orange-950">
                 Legal and Policy Information
               </span>
               <ul className="grid grid-cols-1 gap-y-2 text-ui-fg-subtle txt-small">
                 <li>
-                  <a
-                    href="https://github.com/medusajs"
-                    target="_blank"
-                    rel="noreferrer"
+                  <LocalizedClientLink
+                    href="/footer-p"
+                    // target="_blank"
+                    // rel="noreferrer"
                     className="hover:text-ui-fg-base"
                   >
                     Privacy Policy
-                  </a>
+                  </LocalizedClientLink>
                 </li>
                 <li>
-                  <a
-                    href="https://docs.medusajs.com"
-                    target="_blank"
-                    rel="noreferrer"
+                  <LocalizedClientLink
+                    href="/footer-tos"
+                    // target="_blank"
+                    // rel="noreferrer"
                     className="hover:text-ui-fg-base"
                   >
                     Terms of Service
-                  </a>
+                  </LocalizedClientLink>
                 </li>
                 <li>
-                  <a
-                    href="https://github.com/medusajs/nextjs-starter-medusa"
-                    target="_blank"
-                    rel="noreferrer"
+                  <LocalizedClientLink
+                    href="/footer-rp"
+                    // target="_blank"
+                    // rel="noreferrer"
                     className="hover:text-ui-fg-base"
                   >
                     Refund Policy
-                  </a>
+                  </LocalizedClientLink>
                 </li>
               </ul>
             </div>
 
             <div className="flex flex-col gap-y-2">
-              <span className="txt-small-plus txt-ui-fg-base">
+              <span className="txt-small-plus txt-ui-fg-base text-base text-orange-950">
                 Coming soon on
               </span>
               <ul className="grid grid-cols-1 gap-y-2 text-ui-fg-subtle txt-small">
@@ -374,7 +336,8 @@ export default async function Footer() {
                     </svg>
                   </p>
                   <p>
-                    <svg className="-ml-2 -mt-1"
+                    <svg
+                      className="-ml-2 -mt-1"
                       fill="#000000"
                       xmlns="http://www.w3.org/2000/svg"
                       viewBox="0 0 50 50"
@@ -385,7 +348,8 @@ export default async function Footer() {
                     </svg>
                   </p>
                   <p>
-                    <svg className="-ml-7"
+                    <svg
+                      className="-ml-7"
                       fill="#000000"
                       xmlns="http://www.w3.org/2000/svg"
                       viewBox="0 0 50 50"

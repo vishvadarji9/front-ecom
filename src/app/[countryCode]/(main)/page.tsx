@@ -12,7 +12,8 @@ import { ProductCollectionWithPreviews } from "types/global"
 import { cache } from "react"
 
 // Add the code
-import ContactUs from "@modules/contact-us"
+import UserTestimonials from "../../../modules/home/components/testimonials/page"
+// import UserTestimonials from "@modules/home/components/UserTestinomials"
 // import { LOGIN_VIEW } from "@modules/account/templates/login-template" 
 
 export const metadata: Metadata = {
@@ -83,12 +84,12 @@ export default async function Home({
   return (
     <>
       <Hero />
+      <UserTestimonials />
       <div className="py-12">
         <ul className="flex flex-col gap-x-6">
           <FeaturedProducts collections={collections} region={region} />
         </ul>
       </div>
-      <ContactUs />
     </>
   )
 }
