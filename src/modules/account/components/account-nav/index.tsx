@@ -31,6 +31,7 @@ const AccountNav = ({
           <LocalizedClientLink
             href="/account"
             className="flex items-center gap-x-2 text-small-regular py-2"
+            // className="flex items-center gap-x-2 text-sm py-2 text-gray-700 hover:text-gray-900"
             data-testid="account-main-link"
           >
             <>
@@ -41,6 +42,7 @@ const AccountNav = ({
         ) : (
           <>
             <div className="text-xl-semi mb-4 px-8">
+            {/* <div className="text-lg mb-4 px-8"> */}
               Hello {customer?.first_name}
             </div>
             <div className="text-base-regular">
@@ -54,7 +56,9 @@ const AccountNav = ({
                     <>
                       <div className="flex items-center gap-x-2">
                         <User size={20} />
+                        {/* <User className="w-5 h-5" /> */}
                         <span>Profile</span>
+                        {/* <span className="text-base">Profile</span> */}
                       </div>
                       <ChevronDown className="transform -rotate-90" />
                     </>
@@ -69,7 +73,9 @@ const AccountNav = ({
                     <>
                       <div className="flex items-center gap-x-2">
                         <MapPin size={20} />
+                        {/* <User className="w-5 h-5" /> */}
                         <span>Addresses</span>
+                        {/* <span className="text-base">Addresses</span> */}
                       </div>
                       <ChevronDown className="transform -rotate-90" />
                     </>
@@ -82,8 +88,10 @@ const AccountNav = ({
                     data-testid="orders-link"
                   >
                     <div className="flex items-center gap-x-2">
-                      <Package size={20} />
-                      <span>Orders</span>
+                      {/* <Package size={20} /> */}
+                      <User className="w-5 h-5" />
+                      {/* <span>Orders</span> */}
+                      <span className="text-base">Orders</span>
                     </div>
                     <ChevronDown className="transform -rotate-90" />
                   </LocalizedClientLink>
@@ -111,6 +119,7 @@ const AccountNav = ({
         <div>
           <div className="pb-4">
             <h3 className="text-base-semi">Account</h3>
+            {/* <h3 className="text-lg">Account</h3> */}
           </div>
           <div className="text-base-regular">
             <ul className="flex mb-0 justify-start items-start flex-col gap-y-4">
@@ -192,3 +201,6 @@ const AccountNavLink = ({ href, route, children, 'data-testid': dataTestId }: Ac
 }
 
 export default AccountNav
+
+
+
