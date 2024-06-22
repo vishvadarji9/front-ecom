@@ -8,7 +8,12 @@ const nextConfig = withStoreConfig({
   features: store.features,
   reactStrictMode: true,
   images: {
-    remotePatterns: [
+    remotePatterns:[ 
+    {
+      protocol: 'https',
+      hostname: 'omdwhnkhzuucobxsvykv.supabase.co',
+    },
+
       {
         protocol: "http",
         hostname: "localhost",
