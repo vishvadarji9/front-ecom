@@ -35,14 +35,17 @@ const Deal = () => {
     //   </div>
     <div className="bg-[#FFFFFF]">
     <div className="container mx-auto p-5">
-        <h1 className="text-center text-4xl font-bold text-[#5A2E70] mb-10">Unveil Your Magic</h1>
+        <div className="flex text-center text-4xl mb-10 justify-center" >
+        <Image src={require('../../../../../public/unveil.png')} alt="text" height={400} width={400} />
+        </div>
+        {/* <h1 className="text-center text-4xl font-bold text-[#5A2E70] mb-10">Unveil Your Magic</h1> */}
         <div className="overflow-x-auto whitespace-nowrap ">
             <div className="inline-block product bg-orange-200 shadow-lg rounded-lg overflow-hidden w-56 mx-2 h-82 relative">
                 <div className="flex">
                 <Image src={require('../../../../../public/gif(1) (1).gif')} alt="Face Mask" className="w-full h-auto" />
                 </div>
                 <div className="absolute -my-5">
-                <Image src={require('../../../../../public/about.jpg')} alt="small-image" className='h-10 w-10 ml-24 ' />
+                <Image src={require('../../../../../public/about.jpg')} alt="small-image" className='h-10 w-10 ml-24' />
                 </div>
                 <p className="p-5 text-center text-lg mt-5 mb-5">Body Wash</p>
             </div>
