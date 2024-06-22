@@ -54,15 +54,15 @@ const About = () => {
     <div className="about-us-container">
       <div className="image-container">
       <div className="hover-image-container">
-        <Image src={require('../../../../../public/lady.jpg')} alt="main-image" className='main-image' />
+        <Image src={require('../../../../../public/new(aboutus).jpg')} alt="main-image" className='main-image' />
         </div>
         <div className="hover-image-container">
-          <Image src={require('../../../../../public/img2.jpg')} alt="img2" className='img2' />
+          <Image src={require('../../../../../public/aboutus(2).jpg')} alt="img2" className='img2' />
         </div>
       </div>
       <div className="text-content">
         <div className="aboutus">
-          <Image src={require('../../../../../public/aboutus img.png')} alt="text"/>
+          <Image src={require('../../../../../public/aboutus(text).png')} alt="text"/>
           {/* <h1>About Us</h1> */}
           
            <h2>{`WE'RE LEADER IN ORGANIC PRODUCTS & MARKET!`}</h2>

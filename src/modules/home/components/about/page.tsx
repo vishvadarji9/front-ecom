@@ -54,19 +54,18 @@ const About = () => {
     <div className="about-us-container">
       <div className="image-container">
       <div className="hover-image-container">
-        <Image src={require('../../../../../front-ecom/public/lady.jpg')} alt="main-image" className='main-image' />
+        <Image src={require('../../../../../public/new(aboutus).jpg')} alt="main-image" className='main-image' />
         </div>
         <div className="hover-image-container">
-          <Image src={require('../../../../../front-ecom/public/bottle.jpg')} alt="img2" className='img2' /> 
-          {/* <Image src={require('../../../../../../front-ecom/public/vecteezy_a-woman-with-a-face-mask-on-her-face_45679118.gif')} className='img2' /> */}
+          <Image src={require('../../../../../public/aboutus(2).jpg')} alt="img2" className='img2' /> 
         </div>
       </div>
       <div className="text-content">
         <div className="aboutus">
-          <Image src={require('../../../../../public/aboutus img.png')} alt="text" />
+          <Image src={require('../../../../../public/aboutus(text).png')} alt="text" />
           {/* <h1>About Us</h1> */}
           
-          <h2>{`WE'RE LEADER IN ORGANIC PRODUCTS & MARKET!`}</h2>
+          <h1>{`WE'RE LEADER IN ORGANIC PRODUCTS & MARKET!`}</h1>
           <p>
             Orgita cosmetics is a beauty retail-one stop store for all the skincare, hair care and beauty needs for everyone. 
             We all deserve nothing but the best for taking care and wellness of ourselves. 
@@ -75,7 +74,7 @@ const About = () => {
         </div>
         <div className="organic-section">
           <Image src={require('../../../../../public/logo-orgita.svg')} width={90} height={90} alt="logo" />
-          <h2>100% Organic And Toxic Free</h2>
+          <h1>100% Organic And Toxic Free</h1>
           <p>
             Our skin absorbs everything be it dust, lotion or sunlight. Organic beauty care products unclogs your skin, 
             cleanses your skin of dead cells and allows it to breathe.
