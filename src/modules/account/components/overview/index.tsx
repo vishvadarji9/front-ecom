@@ -13,36 +13,48 @@ type OverviewProps = {
 const Overview = ({ customer, orders }: OverviewProps) => {
   return (
     <div data-testid="overview-page-wrapper">
+    {/* <div data-testid="overview-page-wrapper" className="p-8 bg-gray-100"> */}
       <div className="hidden small:block">
         <div className="text-xl-semi flex justify-between items-center mb-4">
           <span data-testid="welcome-message" data-value={customer?.first_name}>Hello {customer?.first_name}</span>
+          {/* <span className="text-base text-gray-600"> */}
           <span className="text-small-regular text-ui-fg-base">
             Signed in as:{" "}
             <span className="font-semibold" data-testid="customer-email" data-value={customer?.email}>{customer?.email}</span>
           </span>
         </div>
         <div className="flex flex-col py-8 border-t border-gray-200">
+        {/* <div className="flex flex-col py-8 border-t border-gray-300"> */}
           <div className="flex flex-col gap-y-4 h-full col-span-1 row-span-2 flex-1">
+          {/* <div className="flex flex-col gap-y-8"> */}
             <div className="flex items-start gap-x-16 mb-6">
+            {/* <div className="flex items-start gap-x-16 mb-8">   */}
               <div className="flex flex-col gap-y-4">
+              {/* <div className="flex flex-col gap-y-4"> */}
                 <h3 className="text-large-semi">Profile</h3>
+                {/* <h3 className="text-xl font-semibold">Profile</h3> */}
                 <div className="flex items-end gap-x-2">
                   <span className="text-3xl-semi leading-none" data-testid="customer-profile-completion" data-value={getProfileCompletion(customer)}>
+                  {/* <span className="text-3xl font-bold" data-testid="customer-profile-completion" data-value={getProfileCompletion(customer)}> */}
                     {getProfileCompletion(customer)}%
                   </span>
                   <span className="uppercase text-base-regular text-ui-fg-subtle">
+                  {/* <span className="uppercase text-sm text-gray-500"> */}
                     Completed
                   </span>
                 </div>
               </div>
 
               <div className="flex flex-col gap-y-4">
-                <h3 className="text-large-semi">Addresses</h3>
+                {/* <h3 className="text-large-semi">Addresses</h3> */}
+                <h3 className="text-xl font-semibold">Addresses</h3>
                 <div className="flex items-end gap-x-2">
-                  <span className="text-3xl-semi leading-none" data-testid="addresses-count" data-value={customer?.shipping_addresses?.length || 0}>
+                  {/* <span className="text-3xl-semi leading-none" data-testid="addresses-count" data-value={customer?.shipping_addresses?.length || 0}> */}
+                  <span className="text-3xl font-bold" data-testid="addresses-count" data-value={customer?.shipping_addresses?.length || 0}>
                     {customer?.shipping_addresses?.length || 0}
                   </span>
-                  <span className="uppercase text-base-regular text-ui-fg-subtle">
+                  {/* <span className="uppercase text-base-regular text-ui-fg-subtle"> */}
+                  <span className="uppercase text-sm text-gray-500">
                     Saved
                   </span>
                 </div>
@@ -51,7 +63,8 @@ const Overview = ({ customer, orders }: OverviewProps) => {
 
             <div className="flex flex-col gap-y-4">
               <div className="flex items-center gap-x-2">
-                <h3 className="text-large-semi">Recent orders</h3>
+                {/* <h3 className="text-large-semi">Recent orders</h3> */}
+                <h3 className="text-xl font-semibold">Recent orders</h3>
               </div>
               <ul className="flex flex-col gap-y-4" data-testid="orders-wrapper">
                 {orders && orders.length > 0 ? (
@@ -61,8 +74,10 @@ const Overview = ({ customer, orders }: OverviewProps) => {
                         <LocalizedClientLink
                           href={`/account/orders/details/${order.id}`}
                         >
-                          <Container className="bg-gray-50 flex justify-between items-center p-4">
-                            <div className="grid grid-cols-3 grid-rows-2 text-small-regular gap-x-4 flex-1">
+                          {/* <Container className="bg-gray-50 flex justify-between items-center p-4"> */}
+                          <Container className="bg-white shadow-md flex justify-between items-center p-4 rounded-lg">
+                            {/* <div className="grid grid-cols-3 grid-rows-2 text-small-regular gap-x-4 flex-1"> */}
+                            <div className="grid grid-cols-3 grid-rows-2 text-base gap-x-4 flex-1">
                               <span className="font-semibold">Date placed</span>
                               <span className="font-semibold">
                                 Order number
@@ -82,7 +97,8 @@ const Overview = ({ customer, orders }: OverviewProps) => {
                                 })}
                               </span>
                             </div>
-                            <button className="flex items-center justify-between" data-testid="open-order-button">
+                            {/* <button className="flex items-center justify-between" data-testid="open-order-button"> */}
+                            <button className="flex items-center justify-between text-gray-500 hover:text-gray-700" data-testid="open-order-button">
                               <span className="sr-only">
                                 Go to order #{order.display_id}
                               </span>
