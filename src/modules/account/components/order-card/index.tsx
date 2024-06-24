@@ -65,6 +65,7 @@ const OrderCard = ({ order }: OrderCardProps) => {
         })}
         {numberOfProducts > 4 && (
           <div className="w-full h-full flex flex-col items-center justify-center">
+
             <span className="text-small-regular text-ui-fg-base">
               + {numberOfLines - 4}
             </span>
