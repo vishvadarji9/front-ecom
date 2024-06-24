@@ -8,5 +8,4 @@ const page = (props: Props) => {
     <UnveilMagic />
   )
 }
-
 export default page
