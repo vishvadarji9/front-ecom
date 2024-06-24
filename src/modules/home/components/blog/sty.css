@@ -1,12 +1,12 @@
 /* blog.css */
 
-.wrapper {
+/* .wrapper {
     display: grid;
     grid-template-columns: repeat(6, 210px);
     grid-template-rows: repeat(2, 295px);
-    gap: 20px;
+    gap: 20px; */
     /* padding: 20px; */
-    justify-content: center;
+    /* justify-content: center;
     align-content: center;
     position: relative;
     height: 100vh;
@@ -48,9 +48,9 @@
 
 .img{
     width: 100%;
-    height: auto;
+    height: auto; */
     /* filter: blur(2px); */
-}
+/* }
 
 .card-title, .card-date {
     position: absolute;
@@ -96,4 +96,4 @@
     .img {
          height: 100%;
     }
-}
+} */

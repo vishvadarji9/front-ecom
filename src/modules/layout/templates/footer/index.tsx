@@ -8,47 +8,77 @@ import LocalizedClientLink from "@modules/common/components/localized-client-lin
 // import MedusaCTA from "@modules/layout/components/medusa-cta"
 
 import Image from "next/image"
+import { RiTwitterXLine } from "react-icons/ri"
+import Input from "@modules/common/components/input"
+import { useState } from "react"
+// import ErrorMessage from "@modules/checkout/components/error-message"
+import { SubmitButton } from "@modules/checkout/components/submit-button"
 // import "../footer/styles.css"
+
+type Props = {}
 
 export default async function Footer() {
   const { collections } = await getCollectionsList(0, 6)
   const { product_categories } = await getCategoriesList(0, 6)
 
+  //   const [message] = useFormState(signUp, null)
+
+  // const [formData, setFormData] = useState({
+
+  //   email: "",
+
+  // })
+
+  // const [errorMessage, setErrorMessage] = useState<string | null>(null)
+
+  // const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+  //   setFormData({ ...formData, [e.target.name]: e.target.value })
+  // }
+
+  // const handleSubmit = (e: React.FormEvent) => {
+  //   e.preventDefault()
+  //   // For now, just log the form data to the console
+  //   console.log(formData)
+  //   // Clear the form after submission
+  //   setFormData({
+  //     email: "",
+  //   })
+  //   setErrorMessage(null)
+  // }
+
   return (
-    <footer className="border-t-0 border-ui-border-base w-full  ">
-      <div className="content-container flex flex-col w-full">
+    <footer className="border-t-0 border-ui-border-base w-full">
+      <div className="content-container flex flex-col w-full py-16 px-10 xsmall:-px-4">
         {/* <div className="flex flex-col gap-y-6 xsmall:flex-row items-start justify-between py-40"> */}
-        <div className="flex flex-col gap-y-6 xsmall:flex-row items-start justify-between py-16">
-          <div>
-            {/* <LocalizedClientLink
+        <div className="flex flex-col gap-y-6 xsmall:flex-row items-start justify-between">
+          {/* <div> */}
+          {/* <LocalizedClientLink
               href="/"
               className="txt-compact-xlarge-plus text-ui-fg-subtle hover:text-ui-fg-base uppercase"
             >
               Medusa Store
             </LocalizedClientLink> */}
 
-            {/* <LocalizedClientLink
+          {/* <LocalizedClientLink
               href="/"
               className="txt-compact-xlarge-plus text-ui-fg-subtle hover:text-ui-fg-base uppercase"
             >
               <img src="/orgitalogo.svg" alt="SVG logo" />
             </LocalizedClientLink> */}
 
-            <div className="logo lg:mr-10 md:mr-10 sm:mr-10 xsmall:mr-10 h-36 w-50 -mt-8">
-              <Image
-                className="xsmall:ml-0 -ml-7 w-56 h-24"
-                src={require("../../../../../public/logo-orgita.svg")}
-                alt="SVG logo"
-              />
-              <p className="text-sm w-52 -ml-0 xsmall:ml-7 text-orange-950">
-                Orgita is an online marketplace specializing in organic
-                products.
-              </p>
-            </div>
+          <div className="logo lg:mr-10 md:mr-10 sm:mr-10  h-36 w-50 -mt-8">
+            <Image
+              className="  w-56 h-24"
+              src={require("../../../../../public/logo-orgita.svg")}
+              alt="SVG logo"
+            />
+            <p className="text-sm w-52 ml-7 text-orange-950">
+              Orgita is an online marketplace specializing in organic products.
+            </p>
           </div>
           {/* div className="text-small-regular gap-10 md:gap-x-16 grid grid-cols-2 sm:grid-cols-3"> */}
-          <div className="text-small-regular gap-10 md:gap-x-16 grid md:grid-cols-3 lg:grid-cols-4 sm:grid-cols-2 xsmall:grid-cols-2">
-            {product_categories && product_categories?.length > 0 && (
+          <div className="text-small-regular ml-6 mb-16 gap-x-3 gap-y-5 lg:gap-x-7 md:gap-x-7 sm:gap-x-7 grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 sm:grid-cols-2 xsmall:grid-cols-1 ">
+            {/* {product_categories && product_categories?.length > 0 && (
               <div className="flex flex-col gap-y-2">
                 <span className="txt-small-plus txt-ui-fg-base">
                   Categories
@@ -105,7 +135,7 @@ export default async function Footer() {
                   })}
                 </ul>
               </div>
-            )}
+            )} */}
 
             {/* {collections && collections.length > 0 && (
               <div className="flex flex-col gap-y-2"> */}
@@ -158,6 +188,35 @@ export default async function Footer() {
                 </ul>
               </div>
             )} */}
+            {/* <div className=" mr-10">
+              <p className="txt-small-plus txt-ui-fg-base text-base gap-y-2 text-orange-950">News Letter</p>
+              <form className="flex flex-col">
+                <label className=" text-ui-fg-subtle txt-small mt-2">Email</label>
+                <input
+                  className="border-2 border-yellow-900 rounded-md p-1"
+                  name="email"
+                  required
+                  type="email" */}
+                  {/* // autoComplete="email"
+                  // data-testid="email-input"
+                  // onChange={handleChange}
+                  // value={formData.email} */}
+                {/* /> */}
+
+                {/* {errorMessage && (
+                <ErrorMessage
+                  error={errorMessage}
+                  data-testid="contact-error"
+                />
+              )} */}
+                {/* <SubmitButton
+                  className="w-14 mt-1 h-8"
+                  data-testid="contact-button"
+                >
+                  Join
+                </SubmitButton>
+              </form>
+            </div> */}
 
             <div className="flex flex-col gap-y-2">
               <span className="txt-small-plus txt-ui-fg-base text-base text-orange-950">
@@ -167,9 +226,9 @@ export default async function Footer() {
                 <li>
                   <LocalizedClientLink
                     // href="https://github.com/medusajs"
-                    href="http://localhost:8000/in/about"
-                    target="_blank"
-                    rel="noreferrer"
+                    href="/about"
+                    // target="_blank"
+                    // rel="noreferrer"
                     className="hover:text-ui-fg-base"
                   >
                     About Us
@@ -199,7 +258,7 @@ export default async function Footer() {
                   </a> */}
                   <LocalizedClientLink
                     // href="https://github.com/medusajs/nextjs-starter-medusa"
-                    href='/contactus'
+                    href="/contactus"
                     // target="_blank"
                     // rel="noreferrer"
                     className="hover:text-ui-fg-base"
@@ -260,7 +319,7 @@ export default async function Footer() {
 
             <div className="flex flex-col gap-y-2">
               <span className="txt-small-plus txt-ui-fg-base text-base text-orange-950">
-                Legal and Policy Information
+                Policy Information
               </span>
               <ul className="grid grid-cols-1 gap-y-2 text-ui-fg-subtle txt-small">
                 <li>
@@ -300,7 +359,7 @@ export default async function Footer() {
               <span className="txt-small-plus txt-ui-fg-base text-base text-orange-950">
                 Coming soon on
               </span>
-              <ul className="grid grid-cols-1 gap-y-2 text-ui-fg-subtle txt-small">
+              {/* <ul> */}
                 {/* <li>
                   <a
                     href="https://github.com/medusajs"
@@ -311,54 +370,57 @@ export default async function Footer() {
                     GitHub
                   </a>
                 </li> */}
-                <div className="socialmedia flex flex-row">
-                  <p>
-                    <svg
+                <div className="flex flex-row">
+                  <div>
+                    <svg className="h-7 w-7"
                       fill="#000000"
                       xmlns="http://www.w3.org/2000/svg"
                       viewBox="0 0 50 50"
-                      width="28px"
-                      height="28px"
+                      // width="28px"
+                      // height="28px"
                     >
                       <path d="M25,3C12.85,3,3,12.85,3,25c0,11.03,8.125,20.137,18.712,21.728V30.831h-5.443v-5.783h5.443v-3.848 c0-6.371,3.104-9.168,8.399-9.168c2.536,0,3.877,0.188,4.512,0.274v5.048h-3.612c-2.248,0-3.033,2.131-3.033,4.533v3.161h6.588 l-0.894,5.783h-5.694v15.944C38.716,45.318,47,36.137,47,25C47,12.85,37.15,3,25,3z" />
                     </svg>
-                  </p>
+                  </div>
 
-                  <p>
+                  <div>
                     <svg
+                      className="mr-1 w-7 h-7"
                       fill="#000000"
                       xmlns="http://www.w3.org/2000/svg"
                       viewBox="0 0 50 50"
-                      width="28px"
-                      height="28px"
+                      // width="28px"
+                      // height="28px"
                     >
                       <path d="M 5.9199219 6 L 20.582031 27.375 L 6.2304688 44 L 9.4101562 44 L 21.986328 29.421875 L 31.986328 44 L 44 44 L 28.681641 21.669922 L 42.199219 6 L 39.029297 6 L 27.275391 19.617188 L 17.933594 6 L 5.9199219 6 z M 9.7167969 8 L 16.880859 8 L 40.203125 42 L 33.039062 42 L 9.7167969 8 z" />
                     </svg>
-                  </p>
-                  <p>
+                    {/* <Image src={require('../../../../../public/icons8-twitter (1).svg')} alt="fb-icon" className="fill-black" height={30} width={30}/> */}
+                    {/* <RiTwitterXLine /> */}
+                  </div>
+                  <div>
                     <svg
-                      className="-ml-2 -mt-1"
+                      className="-ml-4 -mt-1 w-16 h-14"
                       fill="#000000"
                       xmlns="http://www.w3.org/2000/svg"
                       viewBox="0 0 50 50"
-                      width="65px"
-                      height="55px"
+                      // width="65px"
+                      // height="55px"
                     >
                       <path d="M 11.46875 5 C 7.917969 5 5 7.914063 5 11.46875 L 5 20.53125 C 5 24.082031 7.914063 27 11.46875 27 L 20.53125 27 C 24.082031 27 27 24.085938 27 20.53125 L 27 11.46875 C 27 7.917969 24.085938 5 20.53125 5 Z M 11.46875 7 L 20.53125 7 C 23.003906 7 25 8.996094 25 11.46875 L 25 20.53125 C 25 23.003906 23.003906 25 20.53125 25 L 11.46875 25 C 8.996094 25 7 23.003906 7 20.53125 L 7 11.46875 C 7 8.996094 8.996094 7 11.46875 7 Z M 21.90625 9.1875 C 21.402344 9.1875 21 9.589844 21 10.09375 C 21 10.597656 21.402344 11 21.90625 11 C 22.410156 11 22.8125 10.597656 22.8125 10.09375 C 22.8125 9.589844 22.410156 9.1875 21.90625 9.1875 Z M 16 10 C 12.699219 10 10 12.699219 10 16 C 10 19.300781 12.699219 22 16 22 C 19.300781 22 22 19.300781 22 16 C 22 12.699219 19.300781 10 16 10 Z M 16 12 C 18.222656 12 20 13.777344 20 16 C 20 18.222656 18.222656 20 16 20 C 13.777344 20 12 18.222656 12 16 C 12 13.777344 13.777344 12 16 12 Z" />
                     </svg>
-                  </p>
-                  <p>
+                  </div>
+                  <div>
                     <svg
-                      className="-ml-7"
+                      className="-ml-7 w-7 h-7"
                       fill="#000000"
                       xmlns="http://www.w3.org/2000/svg"
                       viewBox="0 0 50 50"
-                      width="28px"
-                      height="28px"
+                      // width="28px"
+                      // height="28px"
                     >
                       <path d="M41,4H9C6.24,4,4,6.24,4,9v32c0,2.76,2.24,5,5,5h32c2.76,0,5-2.24,5-5V9C46,6.24,43.76,4,41,4z M17,20v19h-6V20H17z M11,14.47c0-1.4,1.2-2.47,3-2.47s2.93,1.07,3,2.47c0,1.4-1.12,2.53-3,2.53C12.2,17,11,15.87,11,14.47z M39,39h-6c0,0,0-9.26,0-10 c0-2-1-4-3.5-4.04h-0.08C27,24.96,26,27.02,26,29c0,0.91,0,10,0,10h-6V20h6v2.56c0,0,1.93-2.56,5.81-2.56 c3.97,0,7.19,2.73,7.19,8.26V39z" />
                     </svg>
-                  </p>
+                  </div>
                 </div>
 
                 {/* <li>
@@ -381,11 +443,11 @@ export default async function Footer() {
                     Source code
                   </a>
                 </li> */}
-              </ul>
+              {/* </ul> */}
             </div>
           </div>
         </div>
-        <div className="flex w-full mb-16 justify-between text-ui-fg-muted">
+        <div className="w-full text-ui-fg-muted ">
           <Text className="txt-compact-small">
             © {new Date().getFullYear()} Orgita Store. All rights reserved.
           </Text>
@@ -396,4 +458,228 @@ export default async function Footer() {
   )
 }
 
+// import { getCategoriesList, getCollectionsList } from "@lib/data";
+// import LocalizedClientLink from "@modules/common/components/localized-client-link";
+// import "../footer/styles.css";
+// import Image from "next/image";
 
+// export default async function Footer() {
+//   const { collections } = await getCollectionsList(0, 6);
+//   const { product_categories } = await getCategoriesList(0, 6);
+
+//   return (
+//     <footer className="footer">
+//       <div className="content-container">
+//         <div className="footer-content">
+//           <div className="logo-container">
+//             <Image
+//               className="logo"
+//               src={require('../../../../../public/logo-orgita.svg')}
+//               alt="SVG logo"
+//             />
+//             <p className="logo-description">
+//               Orgita is an online marketplace specializing in organic products.
+//             </p>
+//           </div>
+//           <div className="links-grid">
+//             {product_categories && product_categories.length > 0 && (
+//               <div className="links-column">
+//                 <span className="links-title">Categories</span>
+//                 <ul className="links-list" data-testid="footer-categories">
+//                   {product_categories.slice(0, 6).map((c) => {
+//                     if (c.parent_category) {
+//                       return null;
+//                     }
+
+//                     const children =
+//                       c.category_children?.map((child) => ({
+//                         name: child.name,
+//                         handle: child.handle,
+//                         id: child.id,
+//                       })) || null;
+
+//                     return (
+//                       <li className="link-item" key={c.id}>
+//                         <LocalizedClientLink
+//                           className="link"
+//                           href={`/categories/${c.handle}`}
+//                           data-testid="category-link"
+//                         >
+//                           {c.name}
+//                         </LocalizedClientLink>
+//                         {children && (
+//                           <ul className="sublinks-list">
+//                             {children.map((child) => (
+//                               <li key={child.id}>
+//                                 <LocalizedClientLink
+//                                   className="sublink"
+//                                   href={`/categories/${child.handle}`}
+//                                   data-testid="category-link"
+//                                 >
+//                                   {child.name}
+//                                 </LocalizedClientLink>
+//                               </li>
+//                             ))}
+//                           </ul>
+//                         )}
+//                       </li>
+//                     );
+//                   })}
+//                 </ul>
+//               </div>
+//             )}
+
+//             <div className="links-column">
+//               <span className="links-title text-orange">Quick Links</span>
+//               <ul className="links-list">
+//                 <li>
+//                   <LocalizedClientLink
+//                     href="/aboutus"
+//                     className="link"
+//                   >
+//                     About Us
+//                   </LocalizedClientLink>
+//                 </li>
+//                 <li>
+//                   <LocalizedClientLink
+//                     href="/store"
+//                     className="link"
+//                   >
+//                     Products
+//                   </LocalizedClientLink>
+//                 </li>
+//                 <li>
+//                   <LocalizedClientLink
+//                     href="/contactus"
+//                     className="link"
+//                   >
+//                     Contact Us
+//                   </LocalizedClientLink>
+//                 </li>
+//               </ul>
+//             </div>
+
+//             <div className="links-column">
+//               <span className="links-title text-orange">Customer Service</span>
+//               <ul className="links-list">
+//                 <li>
+//                   <LocalizedClientLink
+//                     href="/footer-ship"
+//                     className="link"
+//                   >
+//                     Shipping
+//                   </LocalizedClientLink>
+//                 </li>
+//                 <li>
+//                   <LocalizedClientLink
+//                     href="/footer-t"
+//                     className="link"
+//                   >
+//                     Track Order
+//                   </LocalizedClientLink>
+//                 </li>
+//                 <li>
+//                   <LocalizedClientLink
+//                     href="/footer-s"
+//                     className="link"
+//                   >
+//                     Support
+//                   </LocalizedClientLink>
+//                 </li>
+//               </ul>
+//             </div>
+
+//             <div className="links-column">
+//               <span className="links-title text-orange">Legal and Policy Information</span>
+//               <ul className="links-list">
+//                 <li>
+//                   <LocalizedClientLink
+//                     href="/footer-p"
+//                     className="link"
+//                   >
+//                     Privacy Policy
+//                   </LocalizedClientLink>
+//                 </li>
+//                 <li>
+//                   <LocalizedClientLink
+//                     href="/footer-tos"
+//                     className="link"
+//                   >
+//                     Terms of Service
+//                   </LocalizedClientLink>
+//                 </li>
+//                 <li>
+//                   <LocalizedClientLink
+//                     href="/footer-rp"
+//                     className="link"
+//                   >
+//                     Refund Policy
+//                   </LocalizedClientLink>
+//                 </li>
+//               </ul>
+//             </div>
+
+//             <div className="links-column">
+//               <span className="links-title text-orange">Coming soon on</span>
+//               <div className="socialmedia">
+//                 <p>
+//                   <svg
+//                     fill="#000000"
+//                     xmlns="http://www.w3.org/2000/svg"
+//                     viewBox="0 0 50 50"
+//                     width="28px"
+//                     height="28px"
+//                   >
+//                     <path d="M25,3C12.85,3,3,12.85,3,25c0,11.03,8.125,20.137,18.712,21.728V30.831h-5.443v-5.783h5.443v-3.848 c0-6.371,3.104-9.168,8.399-9.168c2.536,0,3.877,0.188,4.512,0.274v5.048h-3.612c-2.248,0-3.033,2.131-3.033,4.533v3.161h6.588 l-0.894,5.783h-5.694v15.944C38.716,45.318,47,36.137,47,25C47,12.85,37.15,3,25,3z" />
+//                   </svg>
+//                 </p>
+
+//                 <p>
+//                   <svg
+//                     className="twitter-icon"
+//                     fill="#000000"
+//                     xmlns="http://www.w3.org/2000/svg"
+//                     viewBox="0 0 50 50"
+//                     width="28px"
+//                     height="28px"
+//                   >
+//                     <path d="M 5.9199219 6 L 20.582031 27.375 L 6.2304688 44 L 9.4101562 44 L 21.986328 29.421875 L 31.986328 44 L 44 44 L 28.681641 21.669922 L 42.199219 6 L 39.029297 6 L 27.275391 19.617188 L 17.933594 6 L 5.9199219 6 z M 9.7167969 8 L 16.880859 8 L 40.203125 42 L 33.039062 42 L 9.7167969 8 z" />
+//                   </svg>
+//                 </p>
+//                 <p>
+//                   <svg
+//                     className="instagram-icon"
+//                     fill="#000000"
+//                     xmlns="http://www.w3.org/2000/svg"
+//                     viewBox="0 0 50 50"
+//                     width="65px"
+//                     height="55px"
+//                   >
+//                     <path d="M 11.46875 5 C 7.917969 5 5 7.914063 5 11.46875 L 5 20.53125 C 5 24.082031 7.914063 27 11.46875 27 L 20.53125 27 C 24.082031 27 27 24.085938 27 20.53125 L 27 11.46875 C 27 7.917969 24.085938 5 20.53125 5 Z M 11.46875 7 L 20.53125 7 C 23.003906 7 25 8.996094 25 11.46875 L 25 20.53125 C 25 23.003906 23.003906 25 20.53125 25 L 11.46875 25 C 8.996094 25 7 23.003906 7 20.53125 L 7 11.46875 C 7 8.996094 8.996094 7 11.46875 7 Z M 21.90625 9.1875 C 21.402344 9.1875 21 9.589844 21 10.09375 C 21 10.597656 21.402344 11 21.90625 11 C 22.410156 11 22.8125 10.597656 22.8125 10.09375 C 22.8125 9.589844 22.410156 9.1875 21.90625 9.1875 Z M 16 10 C 12.699219 10 10 12.699219 10 16 C 10 19.300781 12.699219 22 16 22 C 19.300781 22 22 19.300781 22 16 C 22 12.699219 19.300781 10 16 10 Z M 16 12 C 18.222656 12 20 13.777344 20 16 C 20 18.222656 18.222656 20 16 20 C 13.777344 20 12 18.222656 12 16 C 12 13.777344 13.777344 12 16 12 Z" />
+//                   </svg>
+//                 </p>
+//                 <p>
+//                   <svg
+//                     className="linkedin-icon"
+//                     fill="#000000"
+//                     xmlns="http://www.w3.org/2000/svg"
+//                     viewBox="0 0 50 50"
+//                     width="28px"
+//                     height="28px"
+//                   >
+//                     <path d="M41,4H9C6.24,4,4,6.24,4,9v32c0,2.76,2.24,5,5,5h32c2.76,0,5-2.24,5-5V9C46,6.24,43.76,4,41,4z M17,20v19h-6V20H17z M11,14.47c0-1.4,1.2-2.47,3-2.47s2.93,1.07,3,2.47c0,1.4-1.12,2.53-3,2.53C12.2,17,11,15.87,11,14.47z M39,39h-6c0,0,0-9.26,0-10 c0-2-1-4-3.5-4.04h-0.08C27,24.96,26,27.02,26,29c0,0.91,0,10,0,10h-6V20h6v2.56c0,0,1.93-2.56,5.81-2.56 c3.97,0,7.19,2.73,7.19,8.26V39z" />
+//                   </svg>
+//                 </p>
+//               </div>
+//             </div>
+//           </div>
+//         </div>
+//         <div className="footer-bottom">
+//           <span className="footer-bottom-text">
+//             © {new Date().getFullYear()} Orgita Store. All rights reserved.
+//           </span>
+//         </div>
+//       </div>
+//     </footer>
+//   );
+// }
