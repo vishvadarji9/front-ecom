@@ -40,8 +40,9 @@ const Login = ({ setCurrentView }: Props) => {
           />
         </div>
         <ErrorMessage error={message} data-testid="login-error-message" />
+        {/* <SubmitButton data-testid="sign-in-button" className="w-full mt-6">Sign in</SubmitButton> */}
         <SubmitButton data-testid="sign-in-button" className="w-full mt-6">Sign in</SubmitButton>
-      </form>
+    </form>
       <span className="text-center text-ui-fg-base text-small-regular mt-6">
         Not a member?{" "}
         <button
