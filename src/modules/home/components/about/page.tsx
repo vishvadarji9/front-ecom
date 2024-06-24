@@ -52,7 +52,7 @@ import Image from 'next/image'
 const About = () => {
   return (
     <div className="about-us-container">
-      <div className="image-container">
+      <div className="image-container ">
       <div className="hover-image-container">
         <Image src={require('../../../../../front-ecom/public/lady.jpg')} alt="main-image" className='main-image' />
         </div>
