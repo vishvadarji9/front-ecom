@@ -166,12 +166,13 @@ export default function ProductActions({
           onClick={handleAddToCart}
           disabled={!inStock || !variant || !!disabled || isAdding}
           variant="primary"
-          className="w-full h-10"
+          // className="w-full h-10"
+          className="group w-24 h-8 bg-orange-900 hover:bg-orange-700 rounded"
           isLoading={isAdding}
           data-testid="add-product-button"
         >
           {!variant
-            ? "Select variant"
+           ? "Select variant"
             : !inStock
             ? "Out of stock"
             : "Add to cart"}

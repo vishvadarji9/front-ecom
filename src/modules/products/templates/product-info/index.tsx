@@ -10,6 +10,7 @@ const ProductInfo = ({ product }: ProductInfoProps) => {
   return (
     <div id="product-info">
       <div className="flex flex-col gap-y-4 lg:max-w-[500px] mx-auto">
+      {/* <div className="flex flex-col gap-y-4 sm:max-w-[400px] md:max-w-[600px] lg:max-w-[800px] xl:max-w-[1000px] mx-auto p-4 justify-center"> */}
         {product.collection && (
           <LocalizedClientLink
             href={`/collections/${product.collection.handle}`}
@@ -27,7 +28,7 @@ const ProductInfo = ({ product }: ProductInfoProps) => {
         <Text className="text-medium text-ui-fg-subtle" data-testid="product-description">
           {product.description}
           
-        </Text>
+        </Text> 
       </div>
     </div>
   )
