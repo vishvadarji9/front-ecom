@@ -35,7 +35,8 @@ export default function ProductPrice({
           "text-ui-fg-interactive": selectedPrice.price_type === "sale",
         })}
       >
-        {!variant && "From "}
+        {/* {!variant && "From "} */}
+        {!variant}
         <span
           data-testid="product-price"
           data-value={selectedPrice.calculated_price_number}

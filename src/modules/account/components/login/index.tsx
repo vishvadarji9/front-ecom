@@ -5,6 +5,7 @@ import Input from "@modules/common/components/input"
 import { logCustomerIn } from "@modules/account/actions"
 import ErrorMessage from "@modules/checkout/components/error-message"
 import { SubmitButton } from "@modules/checkout/components/submit-button"
+import Image from "next/image"
 
 type Props = {
   setCurrentView: (view: LOGIN_VIEW) => void
@@ -14,9 +15,11 @@ const Login = ({ setCurrentView }: Props) => {
   const [message, formAction] = useFormState(logCustomerIn, null)
 
   return (
+    
     <div className="max-w-sm w-full flex flex-col items-center" data-testid="login-page">
-      <h1 className="text-large-semi uppercase mb-6">Welcome back</h1>
-      <p className="text-center text-base-regular text-ui-fg-base mb-8">
+      {/* <h1 className="text-large-semi uppercase mb-6">Welcome back</h1> */}
+      <Image src={'/images/Login.png'} alt={'Login'} height={80} width={300} />
+      <p className="text-center text-base-regular text-ui-fg-base mb-8 texl-lg font-extralight">
         Sign in to access an enhanced shopping experience.
       </p>
       <form className="w-full" action={formAction}>
@@ -40,18 +43,20 @@ const Login = ({ setCurrentView }: Props) => {
           />
         </div>
         <ErrorMessage error={message} data-testid="login-error-message" />
-        <SubmitButton data-testid="sign-in-button" className="w-full mt-6">Sign in</SubmitButton>
+        <SubmitButton data-testid="sign-in-button" className="w-full mt-6 transition-colors duration-300 hover:bg-rose-200">Sign in</SubmitButton>
       </form>
+        {/* <SubmitButton data-testid="sign-in-button" className="w-full mt-6">Sign in</SubmitButton> */}
+        {/* <SubmitButton data-testid="sign-in-button" className="w-full mt-6">Sign in</SubmitButton>
+    </form> */}
       <span className="text-center text-ui-fg-base text-small-regular mt-6">
-        Not a member?{" "}
+        Not registered yet?{" "}
         <button
           onClick={() => setCurrentView(LOGIN_VIEW.REGISTER)}
-          className="underline"
+          className="text-blue-500 hover:underline"
           data-testid="register-button"
         >
-          Join us
+          Create an account.
         </button>
-        .
       </span>
     </div>
   )

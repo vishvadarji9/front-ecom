@@ -292,7 +292,7 @@ export default async function Footer() {
 
             <div className="flex flex-col gap-y-2">
               <span className="txt-small-plus txt-ui-fg-base text-base text-orange-950">
-                Legal and Policy Information
+                Policy Information
               </span>
               <ul className="grid grid-cols-1 gap-y-2 text-ui-fg-subtle txt-small">
                 <li>
@@ -328,8 +328,8 @@ export default async function Footer() {
               </ul>
             </div>
 
-            <div className="flex flex-col gap-y-2 min-h-[40px] bg-red-500">
-              <div className="txt-small-plus txt-ui-fg-base text-base text-orange-950">
+            <div className="flex flex-col gap-y-2 min-h-[40px] ">
+              <div className="txt-small-plus txt-ui-fg-base text-base text-orange-950 hidden lg:block md:block">
                 Coming soon on
               </div>
               {/* <ul> */}
@@ -343,7 +343,7 @@ export default async function Footer() {
                     GitHub
                   </a>
                 </li> */}
-              <div className="flex flex-row w-full min-h-[20px] flex-wrap gap-2 bg-green-500">
+              <div className="flex flex-row w-full min-h-[20px] flex-wrap gap-2">
                 <svg
                   className="h-7 w-7"
                   fill="#000000"
@@ -353,7 +353,7 @@ export default async function Footer() {
                   <path d="M25,3C12.85,3,3,12.85,3,25c0,11.03,8.125,20.137,18.712,21.728V30.831h-5.443v-5.783h5.443v-3.848 c0-6.371,3.104-9.168,8.399-9.168c2.536,0,3.877,0.188,4.512,0.274v5.048h-3.612c-2.248,0-3.033,2.131-3.033,4.533v3.161h6.588 l-0.894,5.783h-5.694v15.944C38.716,45.318,47,36.137,47,25C47,12.85,37.15,3,25,3z" />
                 </svg>
                 <svg
-                  className="h-7 w-7"
+                  className="h-7 w-7 -ml-2"
                   fill="#000000"
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 50 50"
@@ -363,7 +363,7 @@ export default async function Footer() {
                 {/* <Image src={require('../../../../../public/icons8-twitter (1).svg')} alt="fb-icon" className="fill-black" height={30} width={30}/> */}
                 {/* <RiTwitterXLine /> */}
                 <svg
-                  className="h-7 w-7"
+                  className="h-14 w-14 -ml-3 -mt-1"
                   fill="#000000"
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 50 50"
@@ -371,7 +371,7 @@ export default async function Footer() {
                   <path d="M 11.46875 5 C 7.917969 5 5 7.914063 5 11.46875 L 5 20.53125 C 5 24.082031 7.914063 27 11.46875 27 L 20.53125 27 C 24.082031 27 27 24.085938 27 20.53125 L 27 11.46875 C 27 7.917969 24.085938 5 20.53125 5 Z M 11.46875 7 L 20.53125 7 C 23.003906 7 25 8.996094 25 11.46875 L 25 20.53125 C 25 23.003906 23.003906 25 20.53125 25 L 11.46875 25 C 8.996094 25 7 23.003906 7 20.53125 L 7 11.46875 C 7 8.996094 8.996094 7 11.46875 7 Z M 21.90625 9.1875 C 21.402344 9.1875 21 9.589844 21 10.09375 C 21 10.597656 21.402344 11 21.90625 11 C 22.410156 11 22.8125 10.597656 22.8125 10.09375 C 22.8125 9.589844 22.410156 9.1875 21.90625 9.1875 Z M 16 10 C 12.699219 10 10 12.699219 10 16 C 10 19.300781 12.699219 22 16 22 C 19.300781 22 22 19.300781 22 16 C 22 12.699219 19.300781 10 16 10 Z M 16 12 C 18.222656 12 20 13.777344 20 16 C 20 18.222656 18.222656 20 16 20 C 13.777344 20 12 18.222656 12 16 C 12 13.777344 13.777344 12 16 12 Z" />
                 </svg>
                 <svg
-                  className="h-7 w-7"
+                  className="h-7 w-7 -ml-8"
                   fill="#000000"
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 50 50"
@@ -408,27 +408,6 @@ export default async function Footer() {
           <Text className="txt-compact-small">
             © {new Date().getFullYear()} Orgita Store. All rights reserved.
           </Text>
-
-          <svg className="w-10 h-10"
-            fill="#000000"
-            // height="800px"
-            // width="800px"
-            version="1.1"
-            id="Layer_1"
-            xmlns="http://www.w3.org/2000/svg"
-            // xmlns:xlink="http://www.w3.org/1999/xlink"
-            viewBox="0 0 507.447 507.447"
-            // xml:space="preserve"
-          >
-            <g>
-              <g>
-                <path
-                  d="M96.877,0v507.447l156.846-168.091L410.57,507.447V0H96.877z M390.877,457.476L253.724,310.49L116.57,457.476V19.692
-			               h274.308V457.476z"
-                />
-              </g>
-            </g>
-          </svg>
 
           {/* <MedusaCTA /> */}
         </div>
