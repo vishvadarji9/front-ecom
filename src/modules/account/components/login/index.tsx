@@ -87,7 +87,7 @@ const Login = ({ setCurrentView }: Props) => {
   const [message, formAction] = useFormState(logCustomerIn, null)
 
   return (
-    <div className="max-w-sm w-full flex flex-col items-center" data-testid="login-page">
+    <div className="max-w-sm w-full flex  bg-[#f9f8f8] bg-opacity-50 flex-col items-center p-10" data-testid="login-page">
       <h1 className="text-large-semi uppercase mb-6">Welcome back</h1>
       <p className="text-center text-base-regular text-ui-fg-base mb-8">
         Sign in to access an enhanced shopping experience.
@@ -128,7 +128,7 @@ const Login = ({ setCurrentView }: Props) => {
         ..
       </span>
       </div>
-    </div>
+   
 
   )
 }
