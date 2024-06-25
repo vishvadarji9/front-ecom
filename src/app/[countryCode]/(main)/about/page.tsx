@@ -17,7 +17,7 @@ const About = () => {
       </div>
       <div className="text-content">
         <div className="aboutus">
-          <Image src={require('../../../../../public/aboutus(text).png')} alt="text" />
+          <Image src={require('../../../../../public/AboutUs-removebg-preview.png')} alt="text" />
           {/* <h1>About Us</h1> */}
           
           <h2>{`WE'RE LEADER IN ORGANIC PRODUCTS & MARKET!`}</h2>

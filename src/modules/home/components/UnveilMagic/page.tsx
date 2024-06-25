@@ -32,7 +32,7 @@ const UnveilMagic = () => {
             </div>
             {/* <p className="p-5 text-center text-lg mt-5 mb-5">Shampoo</p> */}
             <LocalizedClientLink
-              className="block hover:text-ui-fg-base p-5 text-center text-lg mt-5 mb-5"
+              className="block hover:text-ui-fg-base p-5 text-center text-lg mt-5 mb-5 font-bold"
               href="/products/hair-loss-control-shampoo"
               rel="noreferrer"
             >
@@ -55,7 +55,7 @@ const UnveilMagic = () => {
               />
             </div>
             <LocalizedClientLink
-              className="block hover:text-ui-fg-base p-5 text-center text-lg mt-5 mb-5"
+              className="block hover:text-ui-fg-base p-5 text-center text-lg mt-5 mb-5 font-bold"
               href="/products/restore-shine-hair-serum"
               rel="noreferrer"
             >
@@ -79,7 +79,7 @@ const UnveilMagic = () => {
               />
             </div>
             <LocalizedClientLink
-              className="block hover:text-ui-fg-base p-5 text-center text-lg mt-5 mb-5"
+              className="block hover:text-ui-fg-base p-5 text-center text-lg mt-5 mb-5 font-bold"
               href="/products/hair-vitality-oil-bhringraj"
               rel="noreferrer"
             >
@@ -103,7 +103,7 @@ const UnveilMagic = () => {
               />
             </div>
             <LocalizedClientLink
-              className="block hover:text-ui-fg-base p-5 text-center text-lg mt-5 mb-5"
+              className="block hover:text-ui-fg-base p-5 text-center text-lg mt-5 mb-5 font-bold"
               href="/products/deyga-lip-balm"
               rel="noreferrer"
             >
@@ -127,7 +127,7 @@ const UnveilMagic = () => {
               />
             </div>
             <LocalizedClientLink
-              className="block hover:text-ui-fg-base p-5 text-center text-lg mt-5 mb-5"
+              className="block hover:text-ui-fg-base p-5 text-center text-lg mt-5 mb-5 font-bold"
               href="/products/wild-indian-rose-body-wash"
               rel="noreferrer"
             >
@@ -151,7 +151,7 @@ const UnveilMagic = () => {
               />
             </div>
             <LocalizedClientLink
-              className="block hover:text-ui-fg-base p-5 text-center text-lg mt-5 mb-5"
+              className="block hover:text-ui-fg-base p-5 text-center text-lg mt-5 mb-5 font-bold"
               href="/products/organic-harvest-face-scrub"
               rel="noreferrer"
             >
