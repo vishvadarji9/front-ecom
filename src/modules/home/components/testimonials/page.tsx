@@ -8,7 +8,7 @@ const UserTestimonials = () => {
         Testimonials
       </h2> */}
       <div className="flex justify-center mb-10">
-          <Image src={require('../../../../../../front-ecom/public/testimonials.svg')} alt={"testimonials.svg"} width={250} height={40}/>
+          <Image src={require('../../../../../public/testimonials.svg')} alt={"testimonials.svg"} width={250} height={40}/>
         </div>
       <div className="max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-8">
         <div className="group h-max p-6 rounded-lg shadow-2xl text-center bg-orange-200 hover:bg-yellow-900 active:bg-yellow-900 focus:outline-none focus:ring focus:ring-orange-300">

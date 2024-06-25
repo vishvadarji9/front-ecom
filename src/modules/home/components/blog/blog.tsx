@@ -164,7 +164,6 @@
 
 // export default Blog;
 
-"use client"
 import Image from "next/image"
 import React from "react"
 import LocalizedClientLink from "@modules/common/components/localized-client-link"
@@ -197,23 +196,41 @@ const Blog = (props: Props) => {
           </LocalizedClientLink>
           {/* <div className="absolute bottom-5 left-5 text-white font-bold text-lg">The AI magically removes moving <br /> objects from videos.</div> */}
           <div className="absolute bottom-5 left-5 text-white font-bold text-lg md:text-base">
-            The AI magically removes moving <br /> objects from videos.
+            Serums make your skin more radiant and help in reducing fine lines.
           </div>
           {/* <div className="absolute bottom-0 left-5 text-white font-bold text-md">July 19, 2019</div> */}
           <div className="absolute bottom-0 left-5 text-white font-bold text-md md:text-sm">
-            July 19, 2019
+            June 18, 2014
           </div>
         </div>
 
         <div className="bg-white col-span-1 sm:row-span-2 md:row-span-2 lg:col-span-2 lg:row-span-2 relative">
           <LocalizedClientLink href="/blog2">
-            <Image src={require('../../../../../public/blog2.jpg')} width={500} height={800} alt="Blog Image 2" className="w-full h-auto lg:h-full md:h-full sm:h-full" />
+            <Image
+              src={require("../../../../../public/blog2.jpg")}
+              width={500}
+              height={800}
+              alt="Blog Image 2"
+              className="w-full h-auto lg:h-full md:h-full sm:h-full"
+            />
           </LocalizedClientLink>
-          <div className="absolute bottom-5 left-5 text-white font-bold text-lg">The AI magically removes moving <br /> objects from videos.</div>
-          <div className="absolute bottom-0 left-5 text-white font-bold text-md">July 19, 2019</div>
-        </div>
+          <div className="absolute bottom-5 left-5 text-white font-bold text-lg">
+            Body wash is essential for maintaining good hygiene and healthy
+            skin.
+          </div>
+          <div className="absolute bottom-0 left-5 text-white font-bold text-md">
+            March 29, 2014
+          </div>
+          {/* <div className="box">
+          <LocalizedClientLink 
+                 
+                 href="/blog2"
+           > 
+            <Image src={require('../../../../../public/blog2.jpg')} width={500} height={500} alt="Image 2" className='img' id='img2'/>
+            </LocalizedClientLink>
+          </div> */}
 
-        {/* <div className="bg-white col-span-1 md:col-span-1 lg:col-span-2 lg:row-span-2 relative">
+          {/* <div className="bg-white col-span-1 md:col-span-1 lg:col-span-2 lg:row-span-2 relative">
           <LocalizedClientLink href="/blog2">
             <Image
               src={require("../../../../../public/blog2.jpg")}
@@ -230,91 +247,92 @@ const Blog = (props: Props) => {
           <div className="absolute bottom-0 left-5 text-white font-bold text-md md:text-sm">
             July 19, 2019
           </div>
-        </div> */}
+          </div> */}
 
-        {/* <div className="bg-white col-span-1 sm:col-span-2 relative">
+          {/* <div className="bg-white col-span-1 sm:col-span-2 relative">
           <LocalizedClientLink href="/blog3">
             <Image src={require('../../../../../public/blog3.jpg')} width={500} height={500} alt="Blog Image 3" className="w-full h-auto" />
           </LocalizedClientLink>
           <div className="absolute bottom-5 left-5 text-white font-bold text-lg">The AI magically removes moving <br /> objects from videos.</div>
           <div className="absolute bottom-0 left-5 text-white font-bold text-md">July 19, 2019</div>
-        </div> */}
+          </div> */}
 
-        <div className="bg-white col-span-1 md:col-span-1 lg:col-span-2 relative">
-          <LocalizedClientLink href="/blog3">
-            <Image
-              src={require("../../../../../public/blog3.jpg")}
-              layout="responsive"
-              width={500}
-              height={500}
-              alt="Blog Image 3"
-              className="w-full h-auto"
-            />
-          </LocalizedClientLink>
-          <div className="absolute bottom-5 left-5 text-white font-bold text-lg md:text-base">
-            The AI magically removes moving <br /> objects from videos.
+          <div className="bg-white col-span-1 md:col-span-1 lg:col-span-2 relative">
+            <LocalizedClientLink href="/blog3">
+              <Image
+                src={require("../../../../../public/blog3.jpg")}
+                layout="responsive"
+                width={500}
+                height={500}
+                alt="Blog Image 3"
+                className="w-full h-auto"
+              />
+            </LocalizedClientLink>
+            <div className="absolute bottom-5 left-5 text-white font-bold text-lg md:text-base">
+              Body cream is crucial for maintaining healthy, hydrated skin all
+              over the body.
+            </div>
+            <div className="absolute bottom-0 left-5 text-white font-bold text-md md:text-sm">
+              July 23, 2024
+            </div>
           </div>
-          <div className="absolute bottom-0 left-5 text-white font-bold text-md md:text-sm">
-            July 19, 2019
-          </div>
-        </div>
 
-        {/* <div className="bg-white col-span-1 sm:col-span-2 relative">
+          {/* <div className="bg-white col-span-1 sm:col-span-2 relative">
           <LocalizedClientLink href="/blog4">
             <Image src={require('../../../../../public/blog5.jpg')} width={500} height={500} alt="Blog Image 4" className="w-full h-auto" />
           </LocalizedClientLink>
           <div className="absolute bottom-5 left-5 text-white font-bold text-lg">The AI magically removes moving <br /> objects from videos.</div>
           <div className="absolute bottom-0 left-5 text-white font-bold text-md">July 19, 2019</div>
-        </div> */}
+          </div> */}
 
-        <div className="bg-white col-span-1 md:col-span-1 lg:col-span-2 relative">
-          <LocalizedClientLink href="/blog4">
-            <Image
-              src={require("../../../../../public/blog5.jpg")}
-              layout="responsive"
-              width={500}
-              height={500}
-              alt="Blog Image 4"
-              className="w-full h-auto"
-            />
-          </LocalizedClientLink>
-          <div className="absolute bottom-5 left-5 text-white font-bold text-lg md:text-base">
-            The AI magically removes moving <br /> objects from videos.
+          <div className="bg-white col-span-1 md:col-span-1 lg:col-span-2 relative">
+            <LocalizedClientLink href="/blog4">
+              <Image
+                src={require("../../../../../public/blog5.jpg")}
+                layout="responsive"
+                width={500}
+                height={500}
+                alt="Blog Image 4"
+                className="w-full h-auto"
+              />
+            </LocalizedClientLink>
+            <div className="absolute bottom-5 left-5 text-white font-bold text-lg md:text-base">
+              Face cream is essential for maintaining healthy, hydrated skin.
+            </div>
+            <div className="absolute bottom-0 left-5 text-white font-bold text-md md:text-sm">
+              January 09, 2024
+            </div>
           </div>
-          <div className="absolute bottom-0 left-5 text-white font-bold text-md md:text-sm">
-            July 19, 2019
-          </div>
-        </div>
 
-        {/* <div className="bg-white col-span-1 sm:col-span-2 relative">
+          {/* <div className="bg-white col-span-1 sm:col-span-2 relative">
           <LocalizedClientLink href="/blog5">
             <Image src={require('../../../../../public/blog4.jpg')} width={500} height={500} alt="Blog Image 5" className="w-full h-auto" />
           </LocalizedClientLink>
           <div className="absolute bottom-5 left-5 text-white font-bold text-lg">The AI magically removes moving <br /> objects from videos.</div>
           <div className="absolute bottom-0 left-5 text-white font-bold text-md">July 19, 2019</div>
-        </div> */}
+          </div> */}
 
-        <div className="bg-white col-span-1 md:col-span-1 lg:col-span-2 relative">
-          <LocalizedClientLink href="/blog5">
-            <Image
-              src={require("../../../../../public/blog4.jpg")}
-              layout="responsive"
-              width={500}
-              height={500}
-              alt="Blog Image 5"
-              className="w-full h-auto lg:h-full md:h-full"
-            />
-          </LocalizedClientLink>
-          <div className="absolute bottom-5 left-5 text-white font-bold text-lg md:text-base">
-            The AI magically removes moving <br /> objects from videos.
-          </div>
-          <div className="absolute bottom-0 left-5 text-white font-bold text-md md:text-sm">
-            July 19, 2019
+          <div className="bg-white col-span-1 md:col-span-1 lg:col-span-2 relative">
+            <LocalizedClientLink href="/blog5">
+              <Image
+                src={require("../../../../../public/blog4.jpg")}
+                layout="responsive"
+                width={500}
+                height={500}
+                alt="Blog Image 5"
+                className="w-full h-auto lg:h-full md:h-full"
+              />
+            </LocalizedClientLink>
+            <div className="absolute bottom-5 left-5 text-white font-bold text-lg md:text-base">
+              {`Hair care is a crucial aspect of overall grooming and well-being, as it involves maintaining the health, cleanliness, and style of one's hair.`}
+            </div>
+            <div className="absolute bottom-0 left-5 text-white font-bold text-md md:text-sm">
+              December 23, 2024
+            </div>
           </div>
         </div>
       </div>
     </div>
   )
 }
-
 export default Blog

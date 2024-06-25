@@ -115,7 +115,14 @@
         max-width: 100%;
         height: auto;
     }
-    
+    .center{
+    cursor: pointer;
+    transition: transform 0.3s, filter 0.3s;
+    }
+    .center:hover{
+         transform: scale(1.1);
+        filter: brightness(1.1);
+    }
     .description-container {
         margin-top: 20px;
     }
@@ -184,5 +191,3 @@
         padding-right: 400px;
     }
 }
-
-    
