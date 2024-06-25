@@ -167,15 +167,15 @@
     display: block;
 }
 .mybg{
-  /* width: 100vw; */
-  /* height: 70vh; */
-    /* position: absolute; */
-    /* background-image: url('../../../../../public/bgimg.webp');
-    background-size: 100% 100%;
+  width: 100vw;
+  height: 70vh; */
+    /* position: absolute;
+     background-image: url('../../../../../public/bgimg.webp');
+     background-size: 100% 100%;
     background-repeat: no-repeat; */
-/* } */ 
+ /* }  */
 
-/* .sticky {
+ .sticky {
   position: sticky;
   top: 0;
   z-index: 50;
@@ -347,19 +347,19 @@ svg {
 }
 
 .mybg {
-  /* background-image: url('../../../../../public/bgimg3.jpg'); */
-  /* background: hsla(40, 63%, 85%, 1);
+  background-image: url('../../../../../public/bgimg3.jpg');
+   background: hsla(40, 63%, 85%, 1);
 background: linear-gradient(90deg, hsla(40, 63%, 85%, 1) 0%, hsla(22, 94%, 79%, 1) 100%);
 filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#F1E1C2", endColorstr="#FCBC98", GradientType=1 );
   background-size: 100% 100%;
   background-repeat: no-repeat;
-} */
+}
 
 /* Common styles */
 
 /* Existing styles... */
 
-.dropdown-content {
+/* .dropdown-content {
   display: none;
 }
 
@@ -549,7 +549,8 @@ svg {
   svg {
     display: block;
   }
-}
+  .dropdown-content1{display: none;}
+} */
 
 
 
