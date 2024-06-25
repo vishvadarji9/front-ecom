@@ -23,8 +23,8 @@ const Teams = (props: Props) => {
                 </div>
                 <div className="text-center p-5">
                     <div className="grid gap-5 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
-                        <div className="bg-[#fff7ed] rounded-lg shadow-md text-center justify-center p-5">
-                            <div className="flex justify-center items-center mb-2">
+                        <div className="bg-[#fff7ed] rounded-lg shadow-md text-center justify-center p-5 transform transition duration-300 ease-out hover:scale-105">
+                            <div className="flex justify-center items-center mb-2 ">
                                 <Image src={require('../../../../../public/images/radhika3.jpg')} alt={"Radhika Patel"} height={150} width={150} className="rounded-full" />
                             </div>
                             <h2 className="text-xl mb-2 text-gray-800">Radhika Patel</h2>
@@ -35,7 +35,7 @@ const Teams = (props: Props) => {
                                 <a href="https://github.com/radhikaa-patel" className="text-gray-800 text-xl"><VscGithubInverted /></a>
                             </div>
                         </div>
-                        <div className="bg-[#fff7ed] rounded-lg shadow-md text-center justify-center p-5">
+                        <div className="bg-[#fff7ed] rounded-lg shadow-md text-center justify-center p-5 transform transition duration-300 ease-out hover:scale-105">
                             <div className="flex justify-center items-center mb-2">
                                 <Image src={require('../../../../../public/images/vishvadarji1.jpg')} alt={"Vishva Darji"} height={150} width={150} className="rounded-full" />
                             </div>
@@ -47,7 +47,7 @@ const Teams = (props: Props) => {
                                 <a href="https://github.com/vishvadarji9" className="text-gray-800 text-xl"><VscGithubInverted /></a>
                             </div>
                         </div>
-                        <div className="bg-[#fff7ed] rounded-lg shadow-md text-center justify-center p-5">
+                        <div className="bg-[#fff7ed] rounded-lg shadow-md text-center justify-center p-5 transform transition duration-300 ease-out hover:scale-105">
                             <div className="flex justify-center items-center mb-2">
                                 <Image src={require('../../../../../public/images/vishvapatel1.jpg')} alt={"Vishva Patel"} height={150} width={150} className="rounded-full" />
                             </div>
@@ -59,7 +59,7 @@ const Teams = (props: Props) => {
                                 <a href="https://github.com/vishvapatel0912" className="text-gray-800 text-xl"><VscGithubInverted /></a>
                             </div>
                         </div>
-                        <div className="bg-[#fff7ed] rounded-lg shadow-md text-center justify-center p-5">
+                        <div className="bg-[#fff7ed] rounded-lg shadow-md text-center justify-center p-5 transform transition duration-300 ease-out hover:scale-105">
                             <div className="flex justify-center items-center mb-2">
                                 <Image src={require('../../../../../public/images/vishvamaradia1.jpg')} alt={"Vishva Maradia"} height={150} width={150} className="rounded-full" />
                             </div>
@@ -71,7 +71,7 @@ const Teams = (props: Props) => {
                                 <a href="https://github.com/Vishvamaradia25" className="text-gray-800 text-xl"><VscGithubInverted /></a>
                             </div>
                         </div>
-                        <div className="bg-[#fff7ed] rounded-lg shadow-md text-center justify-center p-5">
+                        <div className="bg-[#fff7ed] rounded-lg shadow-md text-center justify-center p-5 transform transition duration-300 ease-out hover:scale-105">
                             <div className="flex justify-center items-center mb-2">
                                 <Image src={require('../../../../../public/images/meshva1.jpg')} alt={"Meshva Patel"} height={150} width={150} className="rounded-full" />
                             </div>
@@ -83,7 +83,7 @@ const Teams = (props: Props) => {
                                 <a href="https://github.com/MESHVA-PATEL398" className="text-gray-800 text-xl"><VscGithubInverted /></a>
                             </div>
                         </div>
-                        <div className="bg-[#fff7ed] rounded-lg shadow-md text-center justify-center p-5">
+                        <div className="bg-[#fff7ed] rounded-lg shadow-md text-center justify-center p-5 transform transition duration-300 ease-out hover:scale-105">
                             <div className="flex justify-center items-center mb-2">
                                 <Image src={require('../../../../../public/images/prachi1.jpg')} alt={"Prachi Prajapati"} height={150} width={150} className="rounded-full" />
                             </div>
@@ -97,7 +97,7 @@ const Teams = (props: Props) => {
                         </div>
 
 
-                        <div className="bg-[#fff7ed] rounded-lg shadow-md text-center justify-center p-5">
+                        <div className="bg-[#fff7ed] rounded-lg shadow-md text-center justify-center p-5 transform transition duration-300 ease-out hover:scale-105">
                             <div className="flex justify-center items-center mb-2">
                                 <Image src={require('../../../../../public/images/kanvi1.jpg')} alt={"Kanvi Patel"} height={150} width={150} className="rounded-full" />
                             </div>
@@ -109,7 +109,7 @@ const Teams = (props: Props) => {
                                 <a href="https://github.com/kanvi1202" className="text-gray-800 text-xl"><VscGithubInverted /></a>
                             </div>
                         </div>
-                        <div className="bg-[#fff7ed] rounded-lg shadow-md text-center justify-center p-5">
+                        <div className="bg-[#fff7ed] rounded-lg shadow-md text-center justify-center p-5 transform transition duration-300 ease-out hover:scale-105">
                             <div className="flex justify-center items-center mb-2">
                                 <Image src={require('../../../../../public/images/aenal1.jpg')} alt={"Aenal Patani"} height={150} width={150} className="rounded-full" />
                             </div>

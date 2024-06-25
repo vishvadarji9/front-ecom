@@ -22,6 +22,7 @@ import Deal from "@modules/home/components/deal/page"
 import UserTestimonials from "../../../modules/home/components/testimonials/page"
 import About from "@modules/home/components/about/page"
 import Blog from "@modules/home/components/blog/blog"
+import Image from "next/image"
 // import UserTestimonials from "@modules/home/components/UserTestinomials"
 // import { LOGIN_VIEW } from "@modules/account/templates/login-template" 
 
@@ -84,7 +85,7 @@ export default async function Home({
     return null
   }
 
-// Adding function
+  // Adding function
 
   // function setCurrentView(view: LOGIN_VIEW): void {
   //   throw new Error("Function not implemented.")
@@ -92,26 +93,20 @@ export default async function Home({
 
   return (
     <>
-    
+      {/* <Image src="/images/aenal1.jpg" width={100} height={100} alt="" /> */}
       <Hero />
-
-      
-      <About/>
+      <About />
       <Deal />
       <UserTestimonials />
-
-      
       <Blog />
-    <Teams />
+      <Teams />
       {/* <div className="py-12">
         <ul className="flex flex-col gap-x-6">
           <FeaturedProducts collections={collections} region={region} />
         </ul>
-       
-        
       </div> */}
-    
+
     </>
-    
+
   )
 }
