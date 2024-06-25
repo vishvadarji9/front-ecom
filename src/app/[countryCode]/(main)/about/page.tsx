@@ -44,7 +44,7 @@
 // export default About
 
 
-// import Head from 'next/head'
+import Head from 'next/head'
 import React from 'react'
 import '../about/styles.css'
 import Image from 'next/image'
@@ -54,18 +54,19 @@ const About = () => {
     <div className="about-us-container">
       <div className="image-container">
       <div className="hover-image-container">
-        <Image src={require('../../../../../public/lady.jpg')} alt="main-image" className='main-image' />
+        <Image src={require('../../../../../public/new(aboutus).jpg')} alt="main-image" className='main-image' />
         </div>
         <div className="hover-image-container">
-          <Image src={require('../../../../../public/img2.jpg')} alt="img2" className='img2' />
+          <Image src={require('../../../../../public/aboutus(2).jpg')} alt="img2" className='img2' /> 
+          {/* <Image src={require('../../../../../../front-ecom/public/vecteezy_a-woman-with-a-face-mask-on-her-face_45679118.gif')} className='img2' /> */}
         </div>
       </div>
       <div className="text-content">
         <div className="aboutus">
-          <Image src={require('../../../../../public/aboutus img.png')} alt="text"/>
+          <Image src={require('../../../../../public/AboutUs-removebg-preview.png')} alt="text" />
           {/* <h1>About Us</h1> */}
           
-           <h2>{`WE'RE LEADER IN ORGANIC PRODUCTS & MARKET!`}</h2>
+          <h2>{`WE'RE LEADER IN ORGANIC PRODUCTS & MARKET!`}</h2>
           <p>
             Orgita cosmetics is a beauty retail-one stop store for all the skincare, hair care and beauty needs for everyone. 
             We all deserve nothing but the best for taking care and wellness of ourselves. 
@@ -86,4 +87,3 @@ const About = () => {
 };
 
 export default About;
-
