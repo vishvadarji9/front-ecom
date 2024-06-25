@@ -1,8 +1,10 @@
+
+
 import React from "react"
 import Link from "next/link"
-import "../footer/style.css"
+import "../../../../../src/modules/layout/templates/footer/style.css"
 
-const PrivateP: React.FC = () => {
+const privatepolicy: React.FC = () => {
   return (
     <div className="container">
       {/* <Image src={require('../../../../../../organic-ecomm-storefront/public/blog1.jpg')} alt="Story Image" className="center" width={500} height={500} /> */}
@@ -118,4 +120,4 @@ const PrivateP: React.FC = () => {
   )
 }
 
-export default PrivateP
+export default privatepolicy
