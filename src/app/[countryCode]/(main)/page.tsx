@@ -10,11 +10,11 @@ import About from "./about/page"
 // import About from "@modules/home/components/about/about"
 import Blog from "@modules/home/components/blog/blog"
 
+
 // Add the code
 import UserTestimonials from "../../../modules/home/components/testimonials/page"
 import UnveilMagic from "@modules/home/components/UnveilMagic/page"
-import Link from "next/link"
-import LocalizedClientLink from "@modules/common/components/localized-client-link"
+import Teams from "@modules/home/components/Teams"
 // import UserTestimonials from "@modules/home/components/UserTestinomials"
 // import { LOGIN_VIEW } from "@modules/account/templates/login-template"
 
@@ -95,17 +95,15 @@ export default async function Home({
         ))}
       </div> */}
       <Hero />
-      <About />
+      <About/>
       <UnveilMagic />
       <UserTestimonials />
-      {/* <About /> */}
+
+      
       <Blog />
-      {/* <Prod /> */}
-      <div className="py-12">
-        <ul className="flex flex-col gap-x-6">
-          <FeaturedProducts collections={collections} region={region} />
-        </ul>
-      </div>
+    <Teams />
+      
+    
     </>
   )
 }
