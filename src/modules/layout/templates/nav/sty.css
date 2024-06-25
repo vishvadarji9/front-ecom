@@ -1,4 +1,4 @@
-/* Base styles */
+
 .sticky {
     position: sticky;
     top: 0;
@@ -7,9 +7,9 @@
   
   .header {
     position: relative;
-    height: 4rem; /* 64px */
+    height: 4rem; 
     margin: 0 auto;
-    border-bottom: 1px solid #e5e7eb; /* Tailwind border color */
+    border-bottom: 1px solid #e5e7eb; 
     background-color: #ffffff;
     transition-duration: 200ms;
   }
@@ -20,8 +20,8 @@
     justify-content: space-between;
     width: 100%;
     height: 100%;
-    font-size: 0.875rem; /* Tailwind text-small-regular */
-    color: #6b7280; /* Tailwind text-ui-fg-subtle */
+    font-size: 0.875rem; 
+    color: #6b7280; 
   }
   
   .nav .flex-1 {
@@ -33,15 +33,15 @@
   }
   
   .nav .txt-xsmall-plus {
-    font-size: 0.8125rem; /* Tailwind text size */
+    font-size: 0.8125rem; 
   }
   
   .nav .text-ui-fg-subtle {
-    color: #6b7280; /* Tailwind text color */
+    color: #6b7280; 
   }
   
   .nav .hover\:text-ui-fg-base:hover {
-    color: #111827; /* Tailwind hover text color */
+    color: #111827; 
   }
   
   .nav .uppercase {
@@ -49,11 +49,11 @@
   }
   
   .nav .gap-20 {
-    gap: 5rem; /* 80px */
+    gap: 5rem; 
   }
   
   .nav .gap-x-6 {
-    gap: 1.5rem; /* 24px */
+    gap: 1.5rem; 
   }
   
   .nav .hidden {
@@ -82,7 +82,7 @@
 .dropdown-content{
   display: none;
 }
-  /* Responsive styles */
+
   @media (min-width: 768px) {
     .md\:flex {
       display: flex;
@@ -109,7 +109,7 @@
     position: fixed;
     top: 0;
     right: -250px;
-    background-color: rgb(93, 157, 165);
+    background-color: #ffd8ab;
     color: black;
     overflow-x: hidden;
     transition: 0.5s;
@@ -143,7 +143,7 @@
 .dropdown-content1 {
     display: none;
     position: absolute;
-    background-color: rgba(48, 105, 108, 0.9);
+    background-color: #ffd8ab;
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     z-index: 1;
     margin-top: -50px;
@@ -160,7 +160,7 @@
 }
 
 .dropdown-content1 a:hover {
-    background-color: rgba(48, 105, 108, 0.9);
+    background-color:#ffd8ab;
 }
 
 .dropdown1:hover .dropdown-content1 {
