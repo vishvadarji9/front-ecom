@@ -1,5 +1,3 @@
-
-
 import { Product } from "@medusajs/medusa"
 import { Metadata } from "next"
 import { getCollectionsList, getProductsList, getRegion } from "@lib/data"
@@ -12,12 +10,13 @@ import About from "./about/page"
 // import About from "@modules/home/components/about/about"
 import Blog from "@modules/home/components/blog/blog"
 
-
 // Add the code
 import UserTestimonials from "../../../modules/home/components/testimonials/page"
 import UnveilMagic from "@modules/home/components/UnveilMagic/page"
+import Link from "next/link"
+import LocalizedClientLink from "@modules/common/components/localized-client-link"
 // import UserTestimonials from "@modules/home/components/UserTestinomials"
-// import { LOGIN_VIEW } from "@modules/account/templates/login-template" 
+// import { LOGIN_VIEW } from "@modules/account/templates/login-template"
 
 export const metadata: Metadata = {
   title: "Medusa Next.js Starter Template",
@@ -78,17 +77,25 @@ export default async function Home({
     return null
   }
 
-// Adding function
+  // Adding function
 
   // function setCurrentView(view: LOGIN_VIEW): void {
   //   throw new Error("Function not implemented.")
   // }
+  const collection = await getCollectionsList()
 
+  console.log({ collection })
   return (
     <>
-    
+      {/* <div>
+        {collection?.collections.map((c) => (
+          <LocalizedClientLink href={`/collections/${c.handle}`}>
+            {c.title}
+          </LocalizedClientLink>
+        ))}
+      </div> */}
       <Hero />
-      <About/>
+      <About />
       <UnveilMagic />
       <UserTestimonials />
       {/* <About /> */}
@@ -98,11 +105,7 @@ export default async function Home({
         <ul className="flex flex-col gap-x-6">
           <FeaturedProducts collections={collections} region={region} />
         </ul>
-       
-        
       </div>
-    
     </>
-    
   )
 }

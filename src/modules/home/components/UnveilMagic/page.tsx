@@ -31,21 +31,13 @@ const UnveilMagic = () => {
               />
             </div>
             {/* <p className="p-5 text-center text-lg mt-5 mb-5">Shampoo</p> */}
-            <LocalizedClientLink className='hover:text-ui-fg-base'
-                href="http://localhost:8000/in/products/hair-loss-control-shampoo" target="_blank" rel="noreferrer">
-                <p className="p-5 text-center text-lg mt-5 mb-5">Shampoo</p>
-                </LocalizedClientLink>
-
-            {/* <p className="p-5 text-center text-lg mt-5 mb-5">
-              <LocalizedClientLink
-                className="hover:text-ui-fg-base"
-                href="http://localhost:8000/in/products/hair-loss-control-shampoo"
-                target="_blank"
-                rel="noreferrer"
-              >
-                Shampoo
-              </LocalizedClientLink>
-            </p> */}
+            <LocalizedClientLink
+              className="block hover:text-ui-fg-base p-5 text-center text-lg mt-5 mb-5"
+              href="/products/hair-loss-control-shampoo"
+              rel="noreferrer"
+            >
+              Shampoo
+            </LocalizedClientLink>
           </div>
           <div className="inline-block product bg-orange-200 shadow-lg rounded-lg overflow-hidden w-56 mx-2 h-82 relative">
             <div className="flex">
@@ -62,7 +54,14 @@ const UnveilMagic = () => {
                 className="h-10 w-10 ml-24"
               />
             </div>
-            <p className="p-5 text-center text-lg mt-5 mb-5">Hair Gel</p>
+            <LocalizedClientLink
+              className="block hover:text-ui-fg-base p-5 text-center text-lg mt-5 mb-5"
+              href="/products/restore-shine-hair-serum"
+              rel="noreferrer"
+            >
+              Hair Serum
+            </LocalizedClientLink>
+            {/* <p className="p-5 text-center text-lg mt-5 mb-5">Hair Gel</p> */}
           </div>
           <div className="inline-block product bg-orange-200 shadow-lg rounded-lg overflow-hidden w-56 mx-2 h-82 relative">
             <div className="flex">
@@ -79,7 +78,14 @@ const UnveilMagic = () => {
                 className="h-10 w-10 ml-24"
               />
             </div>
-            <p className="p-5 text-center text-lg mt-5 mb-5">Hair Oil</p>
+            <LocalizedClientLink
+              className="block hover:text-ui-fg-base p-5 text-center text-lg mt-5 mb-5"
+              href="/products/hair-vitality-oil-bhringraj"
+              rel="noreferrer"
+            >
+              Hair Oil
+            </LocalizedClientLink>
+            {/* <p className="p-5 text-center text-lg mt-5 mb-5">Hair Oil</p> */}
           </div>
           <div className="inline-block product bg-orange-200 shadow-lg rounded-lg overflow-hidden w-56 mx-2 h-82 relative">
             <div className="flex">
@@ -96,7 +102,14 @@ const UnveilMagic = () => {
                 className="h-10 w-10 ml-24"
               />
             </div>
-            <p className="p-5 text-center text-lg mt-5 mb-5">Lip Balm</p>
+            <LocalizedClientLink
+              className="block hover:text-ui-fg-base p-5 text-center text-lg mt-5 mb-5"
+              href="/products/deyga-lip-balm"
+              rel="noreferrer"
+            >
+              Lip Balm
+            </LocalizedClientLink>
+            {/* <p className="p-5 text-center text-lg mt-5 mb-5">Lip Balm</p> */}
           </div>
           <div className="inline-block product bg-orange-200 shadow-lg rounded-lg overflow-hidden w-56 mx-2 h-82 relative">
             <div className="flex">
@@ -113,7 +126,14 @@ const UnveilMagic = () => {
                 className="h-10 w-10 ml-24"
               />
             </div>
-            <p className="p-5 text-center text-lg  mt-5 mb-5">Face Wash</p>
+            <LocalizedClientLink
+              className="block hover:text-ui-fg-base p-5 text-center text-lg mt-5 mb-5"
+              href="/products/wild-indian-rose-body-wash"
+              rel="noreferrer"
+            >
+              Body Wash
+            </LocalizedClientLink>
+            {/* <p className="p-5 text-center text-lg  mt-5 mb-5">Face Wash</p> */}
           </div>
           <div className="inline-block product bg-orange-200 shadow-lg rounded-lg overflow-hidden w-56 mx-2 h-82 relative">
             <div className="flex">
@@ -130,7 +150,14 @@ const UnveilMagic = () => {
                 className="h-10 w-10 ml-24"
               />
             </div>
-            <p className="p-5 text-center text-lg mt-5 mb-5">Body Cream</p>
+            <LocalizedClientLink
+              className="block hover:text-ui-fg-base p-5 text-center text-lg mt-5 mb-5"
+              href="/products/organic-harvest-face-scrub"
+              rel="noreferrer"
+            >
+              Face Scrub
+            </LocalizedClientLink>
+            {/* <p className="p-5 text-center text-lg mt-5 mb-5">Body Cream</p> */}
           </div>
         </div>
       </div>

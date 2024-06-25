@@ -487,201 +487,6 @@
 //   );
 // }
 
-// "use client";
-
-// import { Suspense, useState, useEffect, useRef } from "react";
-// import LocalizedClientLink from "@modules/common/components/localized-client-link";
-// import CartButton from "@modules/layout/components/cart-button";
-// import SideMenu from "@modules/layout/components/side-menu";
-// import "../nav/sty.css";
-// import Image from "next/image";
-// import { RiArrowDropDownLine } from "react-icons/ri";
-// import { CgProfile } from "react-icons/cg";
-
-// export default function Nav() {
-//   const [regions, setRegions] = useState([]);
-//   const [isProductDropdownOpen, setIsProductDropdownOpen] = useState(false);
-//   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
-//   const sidebarRef = useRef(null);
-
-//   useEffect(() => {
-//     const fetchRegions = async () => {
-//       const response = await fetch('/api/regions');
-//       const regionsData = await response.json();
-//       setRegions(regionsData);
-//     };
-
-//     fetchRegions();
-//   }, []);
-
-//   const toggleProductDropdown = () => {
-//     setIsProductDropdownOpen(!isProductDropdownOpen);
-//   };
-
-//   const handleOutsideClick = (event) => {
-//     if (sidebarRef.current && !sidebarRef.current.contains(event.target)) {
-//       setIsSidebarOpen(false);
-//     }
-//   };
-
-//   useEffect(() => {
-//     if (isSidebarOpen) {
-//       document.addEventListener('mousedown', handleOutsideClick);
-//     } else {
-//       document.removeEventListener('mousedown', handleOutsideClick);
-//     }
-
-//     return () => {
-//       document.removeEventListener('mousedown', handleOutsideClick);
-//     };
-//   }, [isSidebarOpen]);
-
-//   return (
-//     <div className="sticky top-0 inset-x-0 z-50 group">
-//       <header className="relative h-16 mx-auto border-b duration-200 bg-white border-ui-border-base">
-//         <nav className="content-container txt-xsmall-plus text-ui-fg-subtle flex items-center justify-between w-full h-full text-small-regular">
-//           <div className="flex flex-1 basis-0 h-full items-center">
-//             <div className="h-full">
-//               <Image
-//                 src={require('../../../../../../organic-ecomm-storefront/public/orgitalogo.svg')}
-//                 width={200} height={10} style={{ height: '70px' }}
-//               />
-//             </div>
-//           </div>
-
-//           <div className="hidden flex-1 basis-0 h-full items-center">
-//             <div className="h-full">
-//               <SideMenu regions={regions} />
-//             </div>
-//           </div>
-
-//           <div className="hidden md:flex gap-20 justify-center text-center">
-//             <div className="flex items-center h-full">
-//               <LocalizedClientLink
-//                 href="/"
-//                 className="txt-compact-xlarge-plus hover:text-ui-fg-base uppercase"
-//               >
-//                 Home
-//               </LocalizedClientLink>
-//             </div>
-//             <div className="flex items-center h-full">
-//               <LocalizedClientLink
-//                 href="/"
-//                 className="txt-compact-xlarge-plus hover:text-ui-fg-base uppercase"
-//               >
-//                 About us
-//               </LocalizedClientLink>
-//             </div>
-//             <div className="flex items-center h-full">
-//               <LocalizedClientLink
-//                 href="/"
-//                 className="txt-compact-xlarge-plus hover:text-ui-fg-base uppercase"
-//               >
-//                 Contact us
-//               </LocalizedClientLink>
-//             </div>
-//             <div className="relative flex items-center h-full">
-//               <button
-//                 onClick={toggleProductDropdown}
-//                 className="txt-compact-xlarge-plus hover:text-ui-fg-base uppercase"
-//               >
-//                 Product
-//               </button>
-
-//               {isProductDropdownOpen && (
-//                 <div className="absolute top-full left-0 bg-white border mt-2 p-2 w-48 shadow-lg z-50">
-//                   <a href="/" className="block px-4 py-2 text-sm hover:bg-gray-200">
-//                     Face Care
-//                   </a>
-//                   <a href="/" className="block px-4 py-2 text-sm hover:bg-gray-200">
-//                     Hair Care
-//                   </a>
-//                   <a href="/" className="block px-4 py-2 text-sm hover:bg-gray-200">
-//                     Body Care
-//                   </a>
-//                 </div>
-//               )}
-//             </div>
-//           </div>
-//           <RiArrowDropDownLine className="text-4xl"/>
-
-//           <div className="flex items-center gap-x-6 h-full flex-1 basis-0 justify-end">
-//             <div className="hidden md:flex items-center gap-x-6 h-full">
-//               {process.env.FEATURE_SEARCH_ENABLED && (
-//                 <LocalizedClientLink
-//                   className="hover:text-ui-fg-base"
-//                   href="/search"
-//                   scroll={false}
-//                   data-testid="nav-search-link"
-//                 >
-//                   Search
-//                 </LocalizedClientLink>
-//               )}
-
-//               <LocalizedClientLink
-//                 className="hover:text-ui-fg-base"
-//                 href="/account"
-//                 data-testid="nav-account-link"
-//               >
-//                 <CgProfile className="text-2xl"/>
-//               </LocalizedClientLink>
-//             </div>
-//             <Suspense
-//               fallback={
-//                 <LocalizedClientLink
-//                   className="hover:text-ui-fg-base flex gap-2"
-//                   href="/cart"
-//                   data-testid="nav-cart-link"
-//                 />
-//               }
-//             >
-//               <CartButton />
-//             </Suspense>
-//           </div>
-//           <div className="menu-bar" id="#menu-bar">
-//             <div className="menu-bar" id="#menu-bar" onClick={() => setIsSidebarOpen(!isSidebarOpen)}>
-//               <Image
-//                 src={require('../../../../../../organic-ecomm-storefront/public/menu-bar.svg')}
-//                 width={40} height={10} style={{ height: '25px' }} />
-
-//               <div ref={sidebarRef} className={`sidebar ${isSidebarOpen ? 'open' : ''}`} id="sidebar">
-//                 <div className="sidenav">
-//                   <ul>
-//                     <a href="#">
-//                       <li onClick={() => setIsSidebarOpen(false)}>Home</li>
-//                     </a>
-//                     <a href="#">
-//                       <li onClick={() => setIsSidebarOpen(false)}>About us</li>
-//                     </a>
-//                     <div className="dropdown1">
-//                       <a href="#">
-//                         <li onClick={() => setIsSidebarOpen(false)}>Product</li>
-//                       </a>
-//                       <a href="#">
-//                         <li onClick={() => setIsSidebarOpen(false)}>Contact us</li>
-//                       </a>
-//                       <div className="dropdown-content1">
-//                         <a href="#" onClick={() => setIsSidebarOpen(false)}>Face Care</a>
-//                         <a href="#" onClick={() => setIsSidebarOpen(false)}>Hair Care</a>
-//                         <a href="#" onClick={() => setIsSidebarOpen(false)}>Body Care</a>
-//                       </div>
-//                     </div>
-//                   </ul>
-//                 </div>
-//               </div>
-//             </div>
-//           </div>
-//         </nav>
-//       </header>
-
-//       {/* Mobile Menu */}
-//       <div className="hidden md:hidden">
-//         <SideMenu regions={regions} />
-//       </div>
-//     </div>
-//   );
-// }
-
 "use client";
 
 import { Suspense, useState, useEffect, useRef } from "react";
@@ -694,12 +499,10 @@ import { RiArrowDropDownLine } from "react-icons/ri";
 import { CgProfile } from "react-icons/cg";
 
 export default function Nav() {
-  const sidebarRef = useRef<HTMLDivElement>(null);
-  // const [isSidebarOpen, setIsSidebarOpen] = React.useState(false);
   const [regions, setRegions] = useState([]);
   const [isProductDropdownOpen, setIsProductDropdownOpen] = useState(false);
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
-  // const sidebarRef = useRef(null);
+  const sidebarRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
     const fetchRegions = async () => {
@@ -720,11 +523,6 @@ export default function Nav() {
       setIsSidebarOpen(false);
     }
   };
-  // const handleOutsideClick = (event) => {
-  //   if (sidebarRef.current && !sidebarRef.current.contains(event.target)) {
-  //     setIsSidebarOpen(false);
-  //   }
-  // };
 
   useEffect(() => {
     if (isSidebarOpen) {
@@ -745,21 +543,21 @@ export default function Nav() {
           <div className="flex flex-1 basis-0 h-full items-center">
             <div className="h-full">
               <Image
-                src={require('../../../../../public/logo-orgita.svg')}
-                width={200} height={10} style={{ height: '70px' }} alt="img"
+                src={require('../../../../../public/orgitalogo.svg')}
+                width={200} height={10} alt="logo" style={{ height: '70px' }}
               />
             </div>
           </div>
 
           <div className="hidden flex-1 basis-0 h-full items-center">
-            <div className="h-full">
-              <SideMenu regions={regions} />
-            </div>
-          </div>
+             <div className="h-full">
+               <SideMenu regions={regions} />
+             </div>
+           </div>
 
-          <div className="hidden md:flex gap-20 justify-center text-center">
-            <div className="flex items-center h-full">
-              <LocalizedClientLink
+         <div className="hidden md:flex gap-20 justify-center text-center">
+             <div className="flex items-center h-full">
+               <LocalizedClientLink
                 href="/"
                 className="txt-compact-xlarge-plus hover:text-ui-fg-base uppercase"
               >
@@ -792,13 +590,13 @@ export default function Nav() {
 
               {isProductDropdownOpen && (
                 <div className="absolute top-full left-0 bg-white border mt-2 p-2 w-48 shadow-lg z-50">
-                  <a href="/" className="block px-4 py-2 text-sm hover:bg-gray-200">
+                  <a href={"/collections/face-care"} className="block px-4 py-2 text-sm hover:bg-gray-200">
                     Face Care
                   </a>
-                  <a href="/" className="block px-4 py-2 text-sm hover:bg-gray-200">
+                  <a href={"/collections/hair-care"} className="block px-4 py-2 text-sm hover:bg-gray-200">
                     Hair Care
                   </a>
-                  <a href="/" className="block px-4 py-2 text-sm hover:bg-gray-200">
+                  <a href={"/collections/body-care"} className="block px-4 py-2 text-sm hover:bg-gray-200">
                     Body Care
                   </a>
                 </div>
@@ -808,8 +606,8 @@ export default function Nav() {
           <RiArrowDropDownLine className="text-4xl"/>
 
           <div className="flex items-center gap-x-6 h-full flex-1 basis-0 justify-end">
-            <div className="hidden md:flex items-center gap-x-6 h-full">
-              {process.env.FEATURE_SEARCH_ENABLED && (
+             <div className="hidden md:flex items-center gap-x-6 h-full">
+               {process.env.FEATURE_SEARCH_ENABLED && (
                 <LocalizedClientLink
                   className="hover:text-ui-fg-base"
                   href="/search"
@@ -844,28 +642,28 @@ export default function Nav() {
             <div className="menu-bar" id="#menu-bar" onClick={() => setIsSidebarOpen(!isSidebarOpen)}>
               <Image
                 src={require('../../../../../public/menu-bar.svg')}
-                width={40} height={10} style={{ height: '25px' }} alt="img2"/>
+                width={40} height={10} alt="menu-bar" style={{ height: '25px' }} />
 
-              <div ref={sidebarRef} className={`sidebar ${isSidebarOpen ? 'open' : ''}`} id="sidebar" onClick={(e) => e.stopPropagation()}>
+              <div ref={sidebarRef} className={`sidebar ${isSidebarOpen ? 'open' : ''}`} id="sidebar">
                 <div className="sidenav">
                   <ul>
                     <a href="#">
-                      <li>Home</li>
+                      <li onClick={() => setIsSidebarOpen(false)}>Home</li>
                     </a>
                     <a href="#">
-                      <li>About us</li>
+                      <li onClick={() => setIsSidebarOpen(false)}>About us</li>
                     </a>
                     <div className="dropdown1">
                       <a href="#">
-                        <li>Product</li>
+                        <li onClick={() => setIsSidebarOpen(false)}>Product</li>
                       </a>
                       <a href="#">
-                        <li>Contact us</li>
+                        <li onClick={() => setIsSidebarOpen(false)}>Contact us</li>
                       </a>
                       <div className="dropdown-content1">
-                        <a href="#">Face Care</a>
-                        <a href="#">Hair Care</a>
-                        <a href="#">Body Care</a>
+                        <a href={"/collections/face-care"} onClick={() => setIsSidebarOpen(false)}>Face Care</a>
+                        <a href={"/collections/hair-care"} onClick={() => setIsSidebarOpen(false)}>Hair Care</a>
+                        <a href={"/collections/body-care"} onClick={() => setIsSidebarOpen(false)}>Body Care</a>
                       </div>
                     </div>
                   </ul>
@@ -881,9 +679,5 @@ export default function Nav() {
         <SideMenu regions={regions} />
       </div>
     </div>
-    
   );
 }
-
-
-
