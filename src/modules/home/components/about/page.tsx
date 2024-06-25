@@ -54,10 +54,10 @@ const About = () => {
     <div className="about-us-container">
       <div className="image-container ">
       <div className="hover-image-container">
-        <Image src={require('../../../../../front-ecom/public/lady.jpg')} alt="main-image" className='main-image' />
+        <Image src={require('../../../../../public/lady.jpg')} alt="main-image" className='main-image' />
         </div>
         <div className="hover-image-container">
-          <Image src={require('../../../../../front-ecom/public/bottle.jpg')} alt="img2" className='img2' /> 
+          <Image src={require('../../../../../public/bottle.jpg')} alt="img2" className='img2' /> 
           {/* <Image src={require('../../../../../../front-ecom/public/vecteezy_a-woman-with-a-face-mask-on-her-face_45679118.gif')} className='img2' /> */}
         </div>
       </div>
