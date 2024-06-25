@@ -10,7 +10,7 @@ const Teams = (props: Props) => {
         <div className="relative w-full h-full flex flex-col items-center">
             <div className="absolute inset-0 z-0">
                 <Image
-                    src={require('../../../../../public/browns.jpg')}
+                    src={require('../../../../../public/images/browns.jpg')}
                     alt={"Background"}
                     layout="fill"
                     objectFit="cover"
@@ -19,10 +19,10 @@ const Teams = (props: Props) => {
             </div>
             <div className="relative z-10 flex flex-col items-center w-full h-full">
                 <div className='flex items-center justify-center mt-10'>
-                    <Image src={require('../../../../../public/SheDevelops3.png')} alt={"She Develops"} height={200} width={300} />
+                    <Image src={require('../../../../../public/images/SheDevelops3.png')} alt={"She Develops"} height={200} width={300} />
                 </div>
                 <div className="text-center p-5">
-                    <div className="grid gap-5 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
+                    <div className="grid gap-5 grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
                         <div className="bg-[#fff7ed] rounded-lg shadow-md text-center justify-center p-5 transform transition duration-300 ease-out hover:scale-105">
                             <div className="flex justify-center items-center mb-2 ">
                                 <Image src={require('../../../../../public/images/radhika3.jpg')} alt={"Radhika Patel"} height={150} width={150} className="rounded-full" />
@@ -34,6 +34,7 @@ const Teams = (props: Props) => {
                                 <a href="https://www.linkedin.com/in/radhika-patel-932142243?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" className="text-gray-800 text-xl"><FaLinkedin /></a>
                                 <a href="https://github.com/radhikaa-patel" className="text-gray-800 text-xl"><VscGithubInverted /></a>
                             </div>
+
                         </div>
                         <div className="bg-[#fff7ed] rounded-lg shadow-md text-center justify-center p-5 transform transition duration-300 ease-out hover:scale-105">
                             <div className="flex justify-center items-center mb-2">
@@ -125,8 +126,8 @@ const Teams = (props: Props) => {
                 </div>
             </div>
         </div>
-            )
+    )
 };
 
-            export default Teams;
+export default Teams;
 
