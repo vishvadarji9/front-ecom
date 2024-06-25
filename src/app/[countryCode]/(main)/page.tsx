@@ -5,6 +5,7 @@ import { Metadata } from "next"
 import { getCollectionsList, getProductsList, getRegion } from "@lib/data"
 import FeaturedProducts from "@modules/home/components/featured-products"
 import Hero from "@modules/home/components/hero"
+import FAQ from "@modules/home/components/FAQ/pages"
 import { ProductCollectionWithPreviews } from "types/global"
 import { cache } from "react"
 import About from "./about/page"
@@ -16,6 +17,7 @@ import Blog from "@modules/home/components/blog/blog"
 
 // Add the code
 import UserTestimonials from "../../../modules/home/components/testimonials/page"
+import { FaQ } from "react-icons/fa6"
 // import UserTestimonials from "@modules/home/components/UserTestinomials"
 // import { LOGIN_VIEW } from "@modules/account/templates/login-template" 
 
@@ -99,7 +101,6 @@ export default async function Home({
           <FeaturedProducts collections={collections} region={region} />
         </ul>
        
-        
       </div>
     
     </>
