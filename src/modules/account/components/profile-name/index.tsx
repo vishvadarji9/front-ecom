@@ -39,7 +39,7 @@ const ProfileName: React.FC<MyInformationProps> = ({ customer }) => {
         clearState={clearState}
         data-testid="account-name-editor"
       >
-        <div className="grid grid-cols-2 gap-x-4">
+        <div className="grid grid-cols-2 gap-x-4 ">
           <Input
             label="First name"
             name="first_name"
