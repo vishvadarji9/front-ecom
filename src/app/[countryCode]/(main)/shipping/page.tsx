@@ -1,7 +1,7 @@
 import React from "react"
 import Image from "next/image"
 import Link from "next/link"
-import "../footer/style.css"
+import "../../../../../src/modules/layout/templates/footer/style.css"
 
 const Shipping: React.FC = () => {
   return (

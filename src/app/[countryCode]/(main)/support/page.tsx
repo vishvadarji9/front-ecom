@@ -1,6 +1,6 @@
 import React from "react"
 import Link from "next/link"
-import "../footer/style.css"
+import "../../../../../src/modules/layout/templates/footer/style.css"
 
 const Support: React.FC = () => {
   return (

@@ -19,9 +19,10 @@ import Teams from "@modules/home/components/Teams"
 // import { LOGIN_VIEW } from "@modules/account/templates/login-template"
 
 export const metadata: Metadata = {
-  title: "Medusa Next.js Starter Template",
+  // title: "Medusa Next.js Starter Template",
+  title: "Orgita",
   description:
-    "A performant frontend ecommerce starter template with Next.js 14 and Medusa.",
+    "Organic products that are made from purely natural ingredients.",
 }
 
 const getCollectionsWithProducts = cache(

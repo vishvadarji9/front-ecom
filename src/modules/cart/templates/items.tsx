@@ -13,7 +13,8 @@ const ItemsTemplate = ({ items, region }: ItemsTemplateProps) => {
   return (
     <div>
       <div className="pb-3 flex items-center">
-        <Heading className="text-[2rem] leading-[2.75rem]">Cart</Heading>
+        {/* <Heading className="text-[2rem] leading-[2.75rem]">Cart</Heading> */}
+        <Heading className="text-[2rem] leading-[2.75rem] text-orange-950 ">Cart</Heading>
       </div>
       <Table>
         <Table.Header className="border-t-0">
