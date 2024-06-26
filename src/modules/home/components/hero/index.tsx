@@ -37,7 +37,7 @@ const Hero = () => {
 
 export default Hero
 
-// "use client"
+
 // import { Button, Heading } from "@medusajs/ui"
 // import Image from "next/image"
 // //import { motion } from "framer-motion"

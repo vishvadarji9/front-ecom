@@ -394,10 +394,10 @@
 //                   href="/cart"
 //                   data-testid="nav-cart-link"
 //                 >
-                  
+
 //                   {/* Cart (0) */}
 //                 </LocalizedClientLink>
-                
+
 //               }
 //             >
 //               <CartButton />
@@ -679,6 +679,7 @@
 //         <SideMenu regions={regions} />
 //       </div>
 //     </div>
+  
 //   );
 // }
 
@@ -886,7 +887,7 @@
 //         <SideMenu regions={regions} />
 //       </div>
 //     </div>
-  
+
 //   );
 // }
 
@@ -909,6 +910,8 @@ export default function Nav() {
   const [regions, setRegions] = useState([]);
   const [isProductDropdownOpen, setIsProductDropdownOpen] = useState(false);
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
+
+
 
   
 
@@ -988,13 +991,13 @@ export default function Nav() {
 
               {isProductDropdownOpen && (
                 <div className="absolute top-full left-0 bg-white border mt-2 p-2 w-48 shadow-lg z-50">
-                  <a href={"/collections/face-care"} className="block px-4 py-2 text-sm hover:bg-gray-200">
+                  <a href={"/collections/face-care"} className="block px-4 py-2 text-xl font-bold hover:bg-gray-200">
                     Face Care
                   </a>
-                  <a href={"/collections/hair-care"} className="block px-4 py-2 text-sm hover:bg-gray-200">
+                  <a href={"/collections/hair-care"} className="block px-4 py-2 text-xl font-bold hover:bg-gray-200">
                     Hair Care
                   </a>
-                  <a href={"/collections/body-care"} className="block px-4 py-2 text-sm hover:bg-gray-200">
+                  <a href={"/collections/body-care"} className="block px-4 py-2 text-xl font-bold hover:bg-gray-200">
                     Body Care
                   </a>
                 </div>
@@ -1055,29 +1058,31 @@ export default function Nav() {
               <div ref={sidebarRef} className={`sidebar ${isSidebarOpen ? 'open' : ''}`} id="sidebar" onClick={(e) => e.stopPropagation()}>
                 <div className="sidenav">
                   <ul>
-                    
-                      <a href="">
-                      <li>Home</li>
-                      </a>
-                     
 
-                    <a href="#">
+                    <a href="/">
+                      <li>Home</li>
+                    </a>
+
+                    <a href="/about">
                       <li>About us</li>
                     </a>
 
                     <div className="dropdown1">
                       <a href="#">
-                        <li>Product</li> 
+                        <li>Product </li> 
                       </a>
-                      <a href="#">
-                        <li>Contact us</li>
-                      </a>
+
                       <div className="dropdown-content1">
                         <a href={"/collections/face-care"}>Face Care</a>
                         <a href={"/collections/hair-care"}>Hair Care</a>
                         <a href={"/collections/body-care"}>Body Care</a>
                       </div>
+   
                     </div>
+                    <a href="/contactus">
+                        <li>Contact us</li>
+                      </a>
+
                   </ul>
                 </div>
               </div>

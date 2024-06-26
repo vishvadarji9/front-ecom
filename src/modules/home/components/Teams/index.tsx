@@ -9,7 +9,7 @@ const Teams = (props: Props) => {
     return (
         <div className="relative w-full h-full flex flex-col items-center">
             <div className="absolute inset-0 z-0">
-                <Image
+                <Image className='p-3'
                     src={require('../../../../../public/browns.jpg')}
                     alt={"Background"}
                     layout="fill"
