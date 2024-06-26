@@ -99,7 +99,7 @@ export default async function Home({
      
       <Teams />
       
-    
+
     </>
   )
 }
