@@ -3,6 +3,7 @@ import { Metadata } from "next"
 import { getCollectionsList, getProductsList, getRegion } from "@lib/data"
 import FeaturedProducts from "@modules/home/components/featured-products"
 import Hero from "@modules/home/components/hero"
+import FAQ from "@modules/home/components/FAQ/pages"
 import { ProductCollectionWithPreviews } from "types/global"
 import { cache } from "react"
 import About from "./about/page"
@@ -23,9 +24,10 @@ import Teams from "@modules/home/components/Teams"
 // import { LOGIN_VIEW } from "@modules/account/templates/login-template"
 
 export const metadata: Metadata = {
-  title: "Medusa Next.js Starter Template",
+  // title: "Medusa Next.js Starter Template",
+  title: "Orgita",
   description:
-    "A performant frontend ecommerce starter template with Next.js 14 and Medusa.",
+    "Organic products that are made from purely natural ingredients.",
 }
 
 const getCollectionsWithProducts = cache(

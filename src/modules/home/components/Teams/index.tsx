@@ -9,7 +9,7 @@ const Teams = (props: Props) => {
     return (
         <div className="relative w-full h-full flex flex-col items-center">
             <div className="absolute inset-0 z-0">
-                <Image
+                <Image className='p-3'
                     src={require('../../../../../public/images/browns.jpg')}
                     alt={"Background"}
                     layout="fill"
@@ -69,8 +69,7 @@ const Teams = (props: Props) => {
                             <div className="flex justify-center gap-3">
                                 <a href="https://www.instagram.com/vishvamaradia25?igsh=MWh3NmZsYXU4OXpvcg==" className="text-gray-800 text-xl"><FaInstagramSquare /></a>
                                 <a href="https://www.linkedin.com/in/vishva-maradia-61798524a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" className="text-gray-800 text-xl"><FaLinkedin /></a>
-                                <a href="https://github.com/Vishvamaradia25" className="text-gray-800 text-xl"><VscGithubInverted /></a>
-                            </div>
+                                <a href="https://github.com/Vishvamaradia25" className="text-gray-800 text-xl"><VscGithubInverted /></a>                       </div>
                         </div>
                         <div className="bg-[#fff7ed] rounded-lg shadow-md text-center justify-center p-5 transform transition duration-300 ease-out hover:scale-105">
                             <div className="flex justify-center items-center mb-2">

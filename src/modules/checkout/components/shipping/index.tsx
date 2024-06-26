@@ -68,8 +68,10 @@ const Shipping: React.FC<ShippingProps> = ({
       <div className="flex flex-row items-center justify-between mb-6">
         <Heading
           level="h2"
+          // className={clx(
+          //   "flex flex-row text-3xl-regular gap-x-2 items-baseline",
           className={clx(
-            "flex flex-row text-3xl-regular gap-x-2 items-baseline",
+            "flex flex-row text-3xl-regular gap-x-2 items-baseline text-orange-950 text-3xl",
             {
               "opacity-50 pointer-events-none select-none":
                 !isOpen && cart.shipping_methods.length === 0,

@@ -1,5 +1,4 @@
-
-import Shipping from '@modules/layout/templates/footer/shipping'
+import FAQPage from '@modules/home/components/FAQ/pages'
 import React from 'react'
 
 type Props = {}
@@ -7,7 +6,7 @@ type Props = {}
 const page = (props: Props) => {
   return (
     // <div>page</div>
-    <Shipping />
+    <FAQPage />
   )
 }
 
