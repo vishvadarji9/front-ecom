@@ -8,19 +8,17 @@ import { cache } from "react"
 import About from "./about/page"
 // import Prod from "@modules/home/components/ourproducts/ourproducts"
 // import About from "@modules/home/components/about/about"
-import Blog from "@modules/home/components/blog/blog"
+// import Blog from "@modules/home/components/blog/blog"
+
 
 
 // Add the code
 import UserTestimonials from "../../../modules/home/components/testimonials/page"
-<<<<<<< HEAD
-import About from "@modules/home/components/about/page"
+// import About from "@modules/home/components/about/page"
 import Blog from "@modules/home/components/blog/blog"
-import Image from "next/image"
-=======
+// import Image from "next/image"
 import UnveilMagic from "@modules/home/components/UnveilMagic/page"
 import Teams from "@modules/home/components/Teams"
->>>>>>> 95154755828b800fa7987eb74cb770796251f31d
 // import UserTestimonials from "@modules/home/components/UserTestinomials"
 // import { LOGIN_VIEW } from "@modules/account/templates/login-template"
 
@@ -93,40 +91,15 @@ export default async function Home({
   console.log({ collection })
   return (
     <>
-<<<<<<< HEAD
-      {/* <Image src="/images/aenal1.jpg" width={100} height={100} alt="" /> */}
-      <Hero />
-      <About />
-      <Deal />
-=======
-      {/* <div>
-        {collection?.collections.map((c) => (
-          <LocalizedClientLink href={`/collections/${c.handle}`}>
-            {c.title}
-          </LocalizedClientLink>
-        ))}
-      </div> */}
+     
       <Hero />
       <About/>
       <UnveilMagic />
->>>>>>> 95154755828b800fa7987eb74cb770796251f31d
       <UserTestimonials />
       <Blog />
-<<<<<<< HEAD
       <Teams />
-      {/* <div className="py-12">
-        <ul className="flex flex-col gap-x-6">
-          <FeaturedProducts collections={collections} region={region} />
-        </ul>
-      </div> */}
-
-    </>
-
-=======
-    <Teams />
       
     
     </>
->>>>>>> 95154755828b800fa7987eb74cb770796251f31d
   )
 }
