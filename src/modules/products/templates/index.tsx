@@ -29,6 +29,12 @@ const ProductTemplate: React.FC<ProductTemplateProps> = ({
 
   return (
     <>
+  {/* <div className="flex pt-2">
+  <Image src={require("../../../../../front-ecom/public/banner1.jpg")}
+  alt="image"
+  width={1000}
+  height={20}/>
+</div>    */}
       <div
         // className="content-container flex flex-col small:flex-row small:items-start py-6 relative"
         className="content-container flex flex-col sm:flex-row sm:items-center md:items-start lg:flex-row lg:items-start xl:flex-row xl:items-start py-6 relative"

@@ -9,7 +9,7 @@ type ProductInfoProps = {
 const ProductInfo = ({ product }: ProductInfoProps) => {
   return (
     <div id="product-info">
-      <div className="flex flex-col gap-y-4 lg:max-w-[400px] mt-5 mr-15">
+      <div className="flex flex-col gap-y-4 lg:max-w-[400px] mt-5 mr-15 justify-center">
       {/* <div className="flex flex-col gap-y-4 sm:max-w-[400px] md:max-w-[600px] lg:max-w-[800px] xl:max-w-[1000px] mx-auto p-4 justify-center"> */}
         {product.collection && (
           <LocalizedClientLink
