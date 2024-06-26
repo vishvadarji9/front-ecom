@@ -1,41 +1,137 @@
-import { Github } from "@medusajs/icons"
-import { Button, Heading } from "@medusajs/ui"
+// import { Github } from "@medusajs/icons"
+// import { Button, Heading } from "@medusajs/ui"
 
 
-const Hero = () => {
-  return (
-    <div className="h-[75vh] w-full border-b border-ui-border-base relative bg-ui-bg-subtle">
-      <div className="absolute inset-0 z-10 flex flex-col justify-center items-center text-center small:p-32 gap-6">
-        <span>
-          <Heading
-            level="h1"
-            className="text-3xl leading-10 text-ui-fg-base font-normal"
-          >
-            Ecommerce Starter Template
-          </Heading>
-          <Heading
-            level="h2"
-            className="text-3xl leading-10 text-ui-fg-subtle font-normal"
-          >
-            Powered by Medusa and Next.js
-          </Heading>
-        </span>
-        <a
-          href="https://github.com/medusajs/nextjs-starter-medusa"
-          target="_blank"
-        >
-          <Button variant="secondary">
-           Hi
-            <Github />
-          </Button>
-        </a>
-      </div>
+// const Hero = () => {
+//   return (
+//     <div className="h-[75vh] w-full border-b border-ui-border-base relative bg-ui-bg-subtle">
+//       <div className="absolute inset-0 z-10 flex flex-col justify-center items-center text-center small:p-32 gap-6">
+//         <span>
+//           <Heading
+//             level="h1"
+//             className="text-3xl leading-10 text-ui-fg-base font-normal"
+//           >
+//             Ecommerce Starter Template
+//           </Heading>
+//           <Heading
+//             level="h2"
+//             className="text-3xl leading-10 text-ui-fg-subtle font-normal"
+//           >
+//             Powered by Medusa and Next.js
+//           </Heading>
+//         </span>
+//         <a
+//           href="https://github.com/medusajs/nextjs-starter-medusa"
+//           target="_blank"
+//         >
+//           <Button variant="secondary">
+//            Hi
+//             <Github />
+//           </Button>
+//         </a>
+//       </div>
       
+//     </div>
+//   )
+// }
+
+// export default Hero
+
+
+
+
+
+"use client"
+
+import { motion } from "framer-motion"
+
+import "react-responsive-carousel/lib/styles/carousel.min.css"
+
+import React from "react"
+import Image from "next/image"
+import { Button } from "@medusajs/ui"
+import LocalizedClientLink from "@modules/common/components/localized-client-link"
+
+const fadeIn = {
+  hidden: { opacity: 0, y: -100 },
+  visible: { opacity: 1, y: 0 },
+}
+const fadeOut = {
+  hidden: { opacity: 0, y: 200 },
+  visible: { opacity: 1, y: 0 },
+}
+
+const Hero: React.FC = () => {
+  return (
+    <div className="w-full h-screen flex items-center justify-between bg-gradient-to-r from-orange-200 to-white">
+      <div className="max-w-7xl mx-auto p-8 flex flex-col  md:flex-row items-center justify-center space-y-8 md:space-y-0 md:space-x-8">
+        <div className="flex-shrink-0 ">
+          <motion.div
+            initial="hidden"
+            animate="visible"
+            variants={fadeOut}
+            transition={{ duration: 1.5 }}
+          >
+            <Image
+              src={require("../../../../../public/images/picccc1.png")}
+              alt="Woman with products"
+              width={600}
+              height={600}
+              className="rounded-lg hover:scale-105 lg:h-[580px] lg:w-[580px] md:h-[430px] md:w-[430px] sm:h-[400px] sm:w-[400px] w-[370px] h-[370px] "
+            />
+          </motion.div>
+        </div>
+        <div className="text-center md:text-right">
+          <motion.h1
+            initial="hidden"
+            animate="visible"
+            variants={fadeIn}
+            transition={{ duration: 1.2, ease: "easeOut" }}
+            className="lg:text-4xl md:text-3xl sm:text-4xl text-3xl mb-4 font-serif "
+          >
+            PURE BEAUTY
+          </motion.h1>
+          {/* <h2 className="text-3xl md:text-5xl mb-4 text-red-600 font-serif">Naturally Yours</h2> */}
+          <motion.h2 
+          initial="hidden"
+          animate="visible"
+          variants={fadeIn}
+          transition={{ duration: 1.5, ease: "easeOut" }}
+          className="lg:text-5xl md:text-4xl sm:text-3xl ml-11 mb-4 font-serif ">
+            <Image
+              src={require("../../../../../public/naturallyyours.png")}
+              alt="text"
+            />
+          </motion.h2>
+          <motion.p 
+          initial="hidden"
+          animate="visible"
+          variants={fadeIn}
+          transition={{ duration: 1.8, ease: "easeOut" }}
+          className="lg:text-lg md:text-sm  mb-6 text-gray-800">
+            Natural, nutrient-rich components that are free from synthetic
+            chemicals, pesticides, and genetically modified organisms are used
+            to make organic beauty care products.
+          </motion.p>
+          <LocalizedClientLink href="/store?sortBy=created_at&page=1">
+            <motion.button
+              initial="hidden"
+              animate="visible"
+              variants={fadeIn}
+              transition={{ duration: 1.11, ease: "easeOut" }}
+              type="button"
+              className="hover:bg-gradient-to-bl text-white bg-gradient-to-br from-orange-900 to-orange-200  focus:ring-4 focus:outline-none focus:ring-orange-200 dark:focus:ring-orange-900 font-medium rounded-lg text-sm px-5 py-2.5 -mt-1 text-center me-2 mb-2"
+            >
+              SHOP NOW
+            </motion.button>
+          </LocalizedClientLink>
+        </div>
+      </div>
     </div>
   )
 }
 
-export default Hero
+export default Hero
 
 
 // import { Button, Heading } from "@medusajs/ui"

@@ -262,7 +262,11 @@ const AccountNav = ({
                   {/* <MdOutlineLogout />Log out */}
 
                 {/* </button> */}
-                <button className="flex items-center space-x-2 p-2 bg-transparent hover:bg-orange-950 text-slate-700 font-semibold hover:text-white py-2 px-4 border border-slate-500 hover:border-transparent rounded">
+                <button 
+                type="button" 
+               onClick={handleLogout}
+               data-testid="logout-button"
+                className="flex items-center space-x-2 p-2 bg-transparent hover:bg-orange-950 text-slate-700 font-semibold hover:text-white py-2 px-4 border border-slate-500 hover:border-transparent rounded">
       <span className="text-base">Log out</span>      <MdOutlineLogout className="text-xl" />
 
     </button>

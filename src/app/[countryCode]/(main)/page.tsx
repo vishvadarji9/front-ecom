@@ -1,27 +1,22 @@
 import { Product } from "@medusajs/medusa"
 import { Metadata } from "next"
 import { getCollectionsList, getProductsList, getRegion } from "@lib/data"
-import FeaturedProducts from "@modules/home/components/featured-products"
 import Hero from "@modules/home/components/hero"
-import FAQ from "@modules/home/components/FAQ/pages"
 import { ProductCollectionWithPreviews } from "types/global"
 import { cache } from "react"
-import About from "./about/page"
-// import Prod from "@modules/home/components/ourproducts/ourproducts"
-// import About from "@modules/home/components/about/about"
-// import Blog from "@modules/home/components/blog/blog"
+// import About from "./about/page"
+
 
 
 
 // Add the code
 import UserTestimonials from "../../../modules/home/components/testimonials/page"
-// import About from "@modules/home/components/about/page"
 import Blog from "@modules/home/components/blog/blog"
-// import Image from "next/image"
 import UnveilMagic from "@modules/home/components/UnveilMagic/page"
 import Teams from "@modules/home/components/Teams"
-// import UserTestimonials from "@modules/home/components/UserTestinomials"
-// import { LOGIN_VIEW } from "@modules/account/templates/login-template"
+import Prod from "@modules/home/components/ourproduct/ourproduct"
+import Features from "@modules/home/components/features"
+import About from "@modules/home/components/about/page"
 
 export const metadata: Metadata = {
   // title: "Medusa Next.js Starter Template",
@@ -95,10 +90,13 @@ export default async function Home({
     <>
      
       <Hero />
-      <About/>
+      <Prod />
+      <Features />
+      <About />
       <UnveilMagic />
-      <UserTestimonials />
       <Blog />
+      <UserTestimonials />
+     
       <Teams />
       
     
