@@ -46,8 +46,8 @@ const Prod = (props: Props) => {
             Explore the best products we offer to our customers.
           </p> */}
         </div>
-        <div className="relative min-h-screen flex flex-col justify-center bg-white overflow-hidden">
-          <div className="max-w-5xl px-4 md:px-6">
+        <div className="relative min-h-screen flex flex-col justify-center bg-white ">
+          <div className="max-w-5xl px-4 md:px-6 ">
             <div className="text-center">
               <div
                 className="inline-flex flex-nowrap overflow-hidden [mask-image:_linear-gradient(to_right,transparent_0,_black_128px,_black_calc(100%-128px),transparent_100%)]"
@@ -55,7 +55,7 @@ const Prod = (props: Props) => {
                 x-init="$nextTick(() => {  let ul = $refs.logos; ul.insertAdjacentHTML('afterend', ul.outerHTML);                        ul.nextSibling.setAttribute('aria-hidden', 'true');                    })"
               >
                 <ul
-                  className="flex items-center justify-center md:justify-start [&_li]:mx-8 [&_img]:max-w-none animate-infinite-scroll"
+                  className="flex lg:flex-row md:flex-row xsmall:flex-col flex-col items-center justify-center md:justify-start [&_li]:mx-8 [&_img]:max-w-none animate-infinite-scroll"
                   x-ref="logos"
                 >
                   <li>

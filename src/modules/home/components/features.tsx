@@ -11,7 +11,10 @@ const features = [
         <FaHandSparkles size="40px"/>
         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4m0 4h.01M4.55 4.52a11.05 11.05 0 000 14.96M19.45 19.48a11.05 11.05 0 000-14.96M7.73 7.73a7.07 7.07 0 010 8.54M16.27 16.27a7.07 7.07 0 010-8.54" />
         </div>
+
+        
       ),
+      
       title: "All Skin Types",
       description: "The type of skin is determined by genetics, although it will also be affected by other factors and can change with time."
     },
@@ -46,12 +49,12 @@ const features = [
              
               
             </p> */}
-            <div className="flex justify-center items-center">
+            <div className="flex justify-center items-center mb-24 -ml-5">
             <Image src={require('../../../../public/ourspecialities.png')} alt="ourspecialties" height={300} width={300} />
             </div>
-            <p className="mt-4 max-w-2xl text-xl text-gray-500 lg:mx-auto">
+            {/* <p className="mt-4 lg:max-w-2xl text-xl text-gray-500 lg:mx-auto  ">
               Explore the best features we offer to our customers.
-            </p>
+            </p> */}
           </div>
   
           <div className="mt-10">
