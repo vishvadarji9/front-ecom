@@ -1,16 +1,28 @@
 import { Product } from "@medusajs/medusa"
 import { Metadata } from "next"
-
 import { getCollectionsList, getProductsList, getRegion } from "@lib/data"
-import FeaturedProducts from "@modules/home/components/featured-products"
 import Hero from "@modules/home/components/hero"
 import { ProductCollectionWithPreviews } from "types/global"
 import { cache } from "react"
+// import About from "./about/page"
+
+
+
+
+// Add the code
+import UserTestimonials from "../../../modules/home/components/testimonials/page"
+import Blog from "@modules/home/components/blog/blog"
+import UnveilMagic from "@modules/home/components/UnveilMagic/page"
+import Teams from "@modules/home/components/Teams"
+import Prod from "@modules/home/components/ourproduct/ourproduct"
+import Features from "@modules/home/components/features"
+import About from "@modules/home/components/about/page"
 
 export const metadata: Metadata = {
-  title: "Medusa Next.js Starter Template",
+  // title: "Medusa Next.js Starter Template",
+  title: "Orgita",
   description:
-    "A performant frontend ecommerce starter template with Next.js 14 and Medusa.",
+    "Organic products that are made from purely natural ingredients.",
 }
 
 const getCollectionsWithProducts = cache(
@@ -66,14 +78,28 @@ export default async function Home({
     return null
   }
 
+  // Adding function
+
+  // function setCurrentView(view: LOGIN_VIEW): void {
+  //   throw new Error("Function not implemented.")
+  // }
+  const collection = await getCollectionsList()
+
+  console.log({ collection })
   return (
     <>
+     
       <Hero />
-      <div className="py-12">
-        <ul className="flex flex-col gap-x-6">
-          <FeaturedProducts collections={collections} region={region} />
-        </ul>
-      </div>
+      <Prod />
+      <Features />
+      <About />
+      <UnveilMagic />
+      <Blog />
+      <UserTestimonials />
+     
+      <Teams />
+      
+    
     </>
   )
 }

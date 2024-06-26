@@ -54,7 +54,8 @@ const Addresses = ({
       <div className="flex flex-row items-center justify-between mb-6">
         <Heading
           level="h2"
-          className="flex flex-row text-3xl-regular gap-x-2 items-baseline"
+          // className="flex flex-row text-3xl-regular gap-x-2 items-baseline"
+          className="flex flex-row text-3xl-regular gap-x-2 items-baseline text-orange-950 text-3xl"
         >
           Shipping Address
           {!isOpen && <CheckCircleSolid />}
@@ -94,7 +95,8 @@ const Addresses = ({
                 <BillingAddress cart={cart} countryCode={countryCode} />
               </div>
             )}
-            <SubmitButton className="mt-6" data-testid="submit-address-button">Continue to delivery</SubmitButton>
+            {/* <SubmitButton className="mt-6" data-testid="submit-address-button">Continue to delivery</SubmitButton> */}
+            <SubmitButton className="mt-6 bg-orange-900  hover:bg-orange-700" data-testid="submit-address-button">Continue to delivery</SubmitButton>
             <ErrorMessage error={message} data-testid="address-error-message" />
           </div>
         </form>

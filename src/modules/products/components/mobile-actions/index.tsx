@@ -123,7 +123,9 @@ const MobileActions: React.FC<MobileActionsProps> = ({
                 disabled={!inStock || !variant}
                 className="w-full"
                 isLoading={isAdding}
+                // data-testid="mobile-cart-button"
                 data-testid="mobile-cart-button"
+
               >
                 {!variant
                   ? "Select variant"
@@ -146,7 +148,9 @@ const MobileActions: React.FC<MobileActionsProps> = ({
             leaveFrom="opacity-100"
             leaveTo="opacity-0"
           >
+            {/* <div className="fixed inset-0 bg-gray-700 bg-opacity-75 backdrop-blur-sm" /> */}
             <div className="fixed inset-0 bg-gray-700 bg-opacity-75 backdrop-blur-sm" />
+
           </Transition.Child>
 
           <div className="fixed bottom-0 inset-x-0">

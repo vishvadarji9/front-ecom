@@ -8,6 +8,7 @@ const nextConfig = withStoreConfig({
   features: store.features,
   reactStrictMode: true,
   images: {
+    domains: ['omdwhnkhzuucobxsvykv.supabase.co'],
     remotePatterns: [
       {
         protocol: "http",
@@ -25,6 +26,10 @@ const nextConfig = withStoreConfig({
         protocol: "https",
         hostname: "medusa-server-testing.s3.us-east-1.amazonaws.com",
       },
+      {
+        protocol: "https",
+        hostname: "omdwhnkhzuucobxsvykv.supabase.co"
+      }
     ],
   },
 })

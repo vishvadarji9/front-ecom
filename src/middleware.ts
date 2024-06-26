@@ -133,10 +133,9 @@ export async function middleware(request: NextRequest) {
   if (isOnboarding) {
     response.cookies.set("_medusa_onboarding", "true", { maxAge: 60 * 60 * 24 })
   }
-
   return response
 }
 
 export const config = {
-  matcher: ["/((?!api|_next/static|favicon.ico).*)"],
+  matcher: ["/((?!api|_next/static|favicon.ico|!images|!icons).*)"],
 }

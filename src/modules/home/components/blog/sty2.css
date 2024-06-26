@@ -1,0 +1,193 @@
+         /* .container {
+            padding: 20px;
+           text-align: justify;
+           
+        }
+        .description p{
+            justify-content: center;
+            text-align: justify;
+            align-items: center;
+            padding-left: 400px;
+            padding-right: 400px;
+        }
+        .title p{
+            justify-content: center;
+            text-align: justify;
+            align-items: center;
+            font-weight: bold;
+            padding-left: 400px;
+            padding-right: 400px;
+        }
+        .title-container {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        h1{
+            font-size: xx-large;
+            position: relative;
+            left: -180px;
+            font-family: cursive;
+            color: brown;
+        }
+
+        .title {
+            font-size: 24px;
+            margin: 0;
+        }
+
+        .center {
+            display: block;
+            margin: 0 auto;
+            max-width: 100%;
+            height: auto;
+        }
+
+        .description-container {
+            margin-top: 20px;
+        }
+
+        .description {
+            font-size: 16px;
+            line-height: 1.6;
+            text-align: center;
+          
+        }
+
+        h3 {
+            font-size: 18px;
+            font-weight: bold;
+            margin: 10px 0;
+        }
+
+        @media (max-width: 600px) {
+            .title {
+                font-size: 20px;
+            }
+
+            .description {
+                font-size: 14px;
+            }
+        } 
+        
+     */
+
+     .container {
+        padding: 20px;
+        text-align: justify;
+    }
+    
+    .description p {
+        justify-content: center;
+        text-align: justify;
+        align-items: center;
+        padding-left: 400px;
+        padding-right: 400px;
+    }
+    
+    .title p {
+        justify-content: center;
+        text-align: justify;
+        font-weight: bold;
+        padding-left: 400px;
+        padding-right: 400px;
+    }
+    
+    .title-container {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    
+    h1 {
+        font-size: xx-large;
+        position: relative;
+        font-family: cursive;
+        color: brown;
+    }
+    
+    .title {
+        font-size: 24px;
+        margin: 0;
+    }
+    
+    .center {
+        display: block;
+        margin: 0 auto;
+        max-width: 100%;
+        height: auto;
+    }
+    .center{
+    cursor: pointer;
+    transition: transform 0.3s, filter 0.3s;
+    }
+    .center:hover{
+         transform: scale(1.1);
+        filter: brightness(1.1);
+    }
+    .description-container {
+        margin-top: 20px;
+    }
+    
+    .description {
+        font-size: 16px;
+        line-height: 1.6;
+        text-align: center;
+    }
+    
+    h3 {
+        font-size: 18px;
+        font-weight: bold;
+        margin: 10px 0;
+    }
+    
+    /* @media (max-width: 700px) { 
+        .title p,
+        .description p {
+            padding-left: 100px;  
+            padding-right: 100px;  
+        }
+    
+        h1 {
+            font-size: large;
+        }
+    
+        .title {
+            font-size: 20px;
+        }
+    
+        .description {
+            font-size: 14px;
+        }
+    } */
+
+    /* For screens smaller than 768px (phones) */
+@media (max-width: 767px) {
+    .description p,
+    .title p {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    /* h1 {
+        font-size: large;
+    } */
+    .title p {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+
+/* For screens larger than 768px (tablets, desktops) */
+@media (min-width: 768px) {
+    /* h1 { 
+        font-size: large;
+    } */
+    .description p,
+    .title p {
+        padding-left: 400px;
+        padding-right: 400px;
+    }
+    
+    .title p {
+        padding-left: 400px;
+        padding-right: 400px;
+    }
+}
