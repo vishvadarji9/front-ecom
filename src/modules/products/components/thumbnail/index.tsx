@@ -57,15 +57,14 @@ const ImageOrPlaceholder = ({
     <Image
       src={image}
       alt="Thumbnail"
-      // className="absolute inset-0 object-cover rounded-t-lg object-center"
-      className="absolute inset-0 object-cover rounded-t-lg object-center transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 hover:bg-500 duration-300"
+      className="absolute inset-0 object-cover rounded-t-lg object-center"
       draggable={false}
       quality={50}
       sizes="(max-width: 576px) 280px, (max-width: 768px) 360px, (max-width: 992px) 480px, 800px"
       fill
     />
   ) : (
-    <div className="w-full h-full absolute inset-0 flex items-center justify-center">
+    <div className="w-full h-full  absolute inset-0 flex items-center justify-center">
       <PlaceholderImage size={size === "small" ? 16 : 24} />
     </div>
   )

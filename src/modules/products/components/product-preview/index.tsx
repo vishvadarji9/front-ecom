@@ -39,7 +39,7 @@ export default async function ProductPreview({
       className="group"
     >
       {/* <div data-testid="product-wrapper" className="bg-red-200 border-10 border-blue-700"> */}
-      <div data-testid="product-wrapper" className="bg-white-200 hover:bg-white-300 rounded-lg shadow-md shadow-gray-300">
+      <div data-testid="product-wrapper" className="bg-white-200 hover:bg-white-300 rounded-lg shadow-md shadow-gray-300 ">
         <Thumbnail
           thumbnail={productPreview.thumbnail}
           size="full"
@@ -71,7 +71,7 @@ export default async function ProductPreview({
             width={15}
             height={15}/>
           </div>
-          <button className="add-to-cart group w-24 h-8 bg-orange-900 hover:bg-orange-700 rounded-lg text-white mb-2">Add to Cart</button>
+          <button className="add-to-cart group w-24 h-8 bg-orange-900 hover:bg-orange-700 rounded text-white mb-2">Add to Cart</button>
         </div>
         
       </div>

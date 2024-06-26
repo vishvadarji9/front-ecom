@@ -21,12 +21,8 @@ const FilterRadioGroup = ({
   'data-testid': dataTestId
 }: FilterRadioGroupProps) => {
   return (
-    // <div className="flex gap-x-3 flex-col gap-y-3">
-    <div className="flex gap-x-1 flex-col gap-y-1 w-28 text-extrabold">
-      {/* <Text className="txt-compact-small-plus text-ui-fg-muted">{title}</Text> */}
-      <Text className="txt-compact-small-plus w-24 m-2 text-ui-fg-muted text-lg">
-        {title}</Text>
-      
+    <div className="flex gap-x-3 flex-col gap-y-3">
+      <Text className="txt-compact-small-plus text-ui-fg-muted">{title}</Text>
       <RadioGroup data-testid={dataTestId}>
         {items?.map((i) => (
           <div
