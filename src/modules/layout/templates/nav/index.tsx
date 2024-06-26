@@ -911,10 +911,6 @@ export default function Nav() {
   const [isProductDropdownOpen, setIsProductDropdownOpen] = useState(false);
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
 
-
-
-  
-
   useEffect(() => {
     const fetchRegions = async () => {
       const response = await fetch('/api/regions');
