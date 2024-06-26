@@ -1,7 +1,7 @@
 import About from '@modules/home/components/about/page'
 import React from 'react'
 
-type Props = {}
+type Props = {};
 
 const aboutus = (props: Props) => {
   return (
@@ -11,4 +11,4 @@ const aboutus = (props: Props) => {
   )
 }
 
-export default aboutus
+export default aboutus;

@@ -43,7 +43,7 @@
 
 // export default About
 
-import Head from "next/head"
+// import Head from "next/head"
 // import React from 'react'
 // import '../about/styles.css'
 // import Image from 'next/image'
@@ -88,7 +88,6 @@ import Head from "next/head"
 // export default About;
 
 import React from "react"
-import "../about/styles.css"
 import Image from "next/image"
 
 const About = () => {
@@ -97,14 +96,14 @@ const About = () => {
       <div className="w-full md:w-auto max-w-full md:max-w-[600px] xsmall:ml-10 md:-ml-10 lg:p-5 lg:-ml-16 -ml-6 md:items-center xsmall:items-center items-center relative">
         <div className="hover-image-container">
           <Image
-            src={require("../../../../../public/lady.jpg")}
+            src={require("../../../../../public/new(aboutus).jpg")}
             alt="main-image"
             className="lg:ml-16 ml-16 w-[300px] h-[320px] lg:w-[480px] lg:h-[500px] md:w-[400px] md:h-[400px] sm:w-[400px] sm:h-[400px] xsmall:w-[330px] xsmall:h-[350px]rounded-lg transition-transform duration-300 filter hover:scale-110 hover:brightness-110"
           />
         </div>
         <div className="hover-image-container">
           <Image
-            src={require("../../../../../public/bottle.jpg")}
+            src={require("../../../../../public/aboutus(2).jpg")}
             alt="img2"
             className=" md:top-[-280px] md:left-[300px] transform -mt-28 ml-60 lg:-mt-44 lg:ml-96 md:-mt-40 md:ml-72 sm:-mt-36 sm:ml-80 xsmall:-mt-28 xsmall:ml-64 lg:w-[230px] lg:h-[210px] md:w-[200px] md:h-[180px] sm:w-[180px] sm:h-[160px] xsmall:w-[160px] xsmall:h-[140px] w-[160px] h-[140px] cursor-pointer transition-transform duration-300 filter hover:scale-110 hover:brightness-110"
           />
@@ -114,7 +113,7 @@ const About = () => {
       <div className="max-w-[600px] mt-6 ml-1 mr-2 lg:-ml-6 md:ml-16 w-full px-1 xsmall:px-6 ">
         <div className="mb-3 px-5 lg:-ml-5 xsmall:px-2">
           <Image
-            src={require("../../../../../public/aboutus img.png")}
+            src={require("../../../../../public/AboutUs-removebg-preview.png")}
             alt="text"
           />
           {/* <h1>About Us</h1> */}

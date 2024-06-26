@@ -209,7 +209,7 @@ const Blog = (props: Props) => {
             <Image
               src={require("../../../../../public/blog2.jpg")}
               width={500}
-              height={800}
+              height={500}
               alt="Blog Image 2"
               className="w-full h-auto lg:h-full md:h-full sm:h-full"
             />
@@ -221,6 +221,7 @@ const Blog = (props: Props) => {
           <div className="absolute bottom-0 left-5 text-white font-bold text-md">
             March 29, 2014
           </div>
+        </div>
           {/* <div className="box">
           <LocalizedClientLink 
                  
@@ -246,7 +247,7 @@ const Blog = (props: Props) => {
           </div>
           <div className="absolute bottom-0 left-5 text-white font-bold text-md md:text-sm">
             July 19, 2019
-          </div>
+          </div> 
           </div> */}
 
           {/* <div className="bg-white col-span-1 sm:col-span-2 relative">
@@ -332,7 +333,6 @@ const Blog = (props: Props) => {
           </div>
         </div>
       </div>
-    </div>
-  )
+  );
 }
 export default Blog
