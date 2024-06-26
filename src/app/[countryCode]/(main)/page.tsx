@@ -9,11 +9,15 @@ import { cache } from "react"
 import About from "./about/page"
 // import Prod from "@modules/home/components/ourproducts/ourproducts"
 // import About from "@modules/home/components/about/about"
-import Blog from "@modules/home/components/blog/blog"
+// import Blog from "@modules/home/components/blog/blog"
+
 
 
 // Add the code
 import UserTestimonials from "../../../modules/home/components/testimonials/page"
+// import About from "@modules/home/components/about/page"
+import Blog from "@modules/home/components/blog/blog"
+// import Image from "next/image"
 import UnveilMagic from "@modules/home/components/UnveilMagic/page"
 import Teams from "@modules/home/components/Teams"
 // import UserTestimonials from "@modules/home/components/UserTestinomials"
@@ -89,21 +93,13 @@ export default async function Home({
   console.log({ collection })
   return (
     <>
-      {/* <div>
-        {collection?.collections.map((c) => (
-          <LocalizedClientLink href={`/collections/${c.handle}`}>
-            {c.title}
-          </LocalizedClientLink>
-        ))}
-      </div> */}
+     
       <Hero />
       <About/>
       <UnveilMagic />
       <UserTestimonials />
-
-      
       <Blog />
-    <Teams />
+      <Teams />
       
     
     </>
