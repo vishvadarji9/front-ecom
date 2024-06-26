@@ -82,13 +82,7 @@ export default async function Home({
   console.log({ collection })
   return (
     <>
-      {/* <div>
-        {collection?.collections.map((c) => (
-          <LocalizedClientLink href={`/collections/${c.handle}`}>
-            {c.title}
-          </LocalizedClientLink>
-        ))}
-      </div> */}
+     
       <Hero />
       {/* <div className="py-12">
         <ul className="flex flex-col gap-x-6">

@@ -133,7 +133,6 @@ export async function middleware(request: NextRequest) {
   if (isOnboarding) {
     response.cookies.set("_medusa_onboarding", "true", { maxAge: 60 * 60 * 24 })
   }
-
   return response
 }
 
