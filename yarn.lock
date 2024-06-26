@@ -190,7 +190,7 @@
 
 "@babel/generator@^7.24.7":
   version "7.24.7"
-  resolved "https://registry.npmjs.org/@babel/generator/-/generator-7.24.7.tgz"
+  resolved "https://registry.yarnpkg.com/@babel/generator/-/generator-7.24.7.tgz#1654d01de20ad66b4b4d99c135471bc654c55e6d"
   integrity sha512-oipXieGC3i45Y1A41t4tAqpnEZWgB/lC6Ehh6+rOviR5XWpTtMmLN+fGjz9vOiNRt0p6RtO6DtD0pdU3vpqdSA==
   dependencies:
     "@babel/types" "^7.24.7"

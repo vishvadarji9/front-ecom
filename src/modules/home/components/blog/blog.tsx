@@ -120,8 +120,8 @@ const Blog = (props: Props) => {
           <Image src={require('../../../../../public/blog1.jpg')} width={500} height={500} alt="Image 1" className='img'/>
           </LocalizedClientLink>
           
-          <div className="card-title">The AI magically removes moving <br /> objects from videos.</div>
-          <div className="card-date">July 19, 2019</div>
+          <div className="card-title">Serums make your skin more radiant and help in reducing fine lines.</div>
+          <div className="card-date">June 18, 2014</div>
         </div>
         <div className="box">
         <LocalizedClientLink 
@@ -131,31 +131,31 @@ const Blog = (props: Props) => {
             <Image src={require('../../../../../public/blog2.jpg')} width={500} height={500} alt="Image 2" className='img' id='img2'/>
             </LocalizedClientLink>
 
-          <div className="card-title">The AI magically removes moving <br /> objects from videos.</div>
-          <div className="card-date">July 19, 2019</div>
+          <div className="card-title">Body wash is essential for maintaining good hygiene and healthy skin.</div>
+          <div className="card-date">March 29, 2014</div>
         </div>
         <div className="box">
          <LocalizedClientLink href='/blog3'>
             <Image src={require('../../../../../public/blog3.jpg')} width={500} height={500} alt="Image 3" className='img'/>
           </LocalizedClientLink>
-          <div className="card-title">The AI magically removes moving <br /> objects from videos.</div>
-          <div className="card-date">July 19, 2019</div>
+          <div className="card-title"> Body cream is crucial for maintaining healthy, hydrated skin all over the body.</div>
+          <div className="card-date">July 23, 2024</div>
         </div>
 
         <div className="box">
           <LocalizedClientLink href='/blog4'>
             <Image src={require('../../../../../public/blog5.jpg')} width={500} height={500} alt="Image 4" className='img'/>
           </LocalizedClientLink>
-          <div className="card-title">The AI magically removes moving <br /> objects from videos.</div>
-          <div className="card-date">July 19, 2019</div>
+          <div className="card-title">Face cream is essential for maintaining healthy, hydrated skin.</div>
+          <div className="card-date">January 09, 2024</div>
         </div>
 
         <div className="box">
           <LocalizedClientLink href='/blog5'>
             <Image src={require('../../../../../public/blog4.jpg')} width={500} height={500} alt="Image 5" className='img'/>
           </LocalizedClientLink>
-          <div className="card-title">The AI magically removes moving <br /> objects from videos.</div>
-          <div className="card-date">July 19, 2019</div>
+          <div className="card-title">{`Hair care is a crucial aspect of overall grooming and well-being, as it involves maintaining the health, cleanliness, and style of one's hair.`} </div>
+          <div className="card-date">December 23, 2024</div>
         </div>
 
       </div>
