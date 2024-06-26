@@ -3,8 +3,8 @@ import { Suspense } from "react"
 import SkeletonProductGrid from "@modules/skeletons/templates/skeleton-product-grid"
 import RefinementList from "@modules/store/components/refinement-list"
 import { SortOptions } from "@modules/store/components/refinement-list/sort-products"
+
 import PaginatedProducts from "./paginated-products"
-import LocalizedClientLink from "@modules/common/components/localized-client-link"
 
 const StoreTemplate = ({
   sortBy,
@@ -12,7 +12,7 @@ const StoreTemplate = ({
   countryCode,
   collection,
 }: {
-  sortBy?: SortOptions
+  sortBy?: SortOptions  
   page?: string
   countryCode: string
   collection?: { collections: { handle: string, title: string }[] } 
@@ -23,8 +23,7 @@ const StoreTemplate = ({
     <div className="flex flex-col small:flex-row small:items-start py-6 content-container" data-testid="category-container">
       <RefinementList sortBy={sortBy || "created_at"} />
       <div className="w-full">
-        {/* <div className="mb-8 text-2xl-semi"> */}
-        <div className="mb-8 text-2xl-semi text-orange-950">
+        <div className="mb-8 text-2xl-semi">
           <h1 data-testid="store-page-title">All products</h1>
         </div>
         <Suspense fallback={<SkeletonProductGrid />}>
